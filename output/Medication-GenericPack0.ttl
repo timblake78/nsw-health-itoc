@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/Medication/GenericPack0> a fhir:Medication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GenericPack0"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: GenericPack0</p><p><b>code</b>: Paracetamol 500mg (100) <span style=\"background: LightGoldenRodYellow\">(Details : {http://acme.com.au/generic-packages code '5636-24556' = '5636-24556', given as 'Paracetamol 500mg (100)'}; {http://www.whocc.no/atc code 'N02BE01' = 'N02BE01', given as 'Paracetamol'}; {SNOMED CT code '28314011000036104' = '28314011000036104', given as 'paracetamol 500 mg tablet, 100'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+           fhir:Coding.code [ fhir:value "UPG" ];
+           fhir:Coding.display [ fhir:value "Unbranded package with no container" ]
+         ]
+       ];
+       fhir:Coding.system [ fhir:value "http://acme.com.au/generic-packages" ];
+       fhir:Coding.code [ fhir:value "5636-24556" ];
+       fhir:Coding.display [ fhir:value "Paracetamol 500mg (100)" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "N02BE01" ];
+       fhir:Coding.display [ fhir:value "Paracetamol" ]
+     ], [
+       fhir:index 2;
+       a sct:28314011000036104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+           fhir:Coding.code [ fhir:value "UPG" ];
+           fhir:Coding.display [ fhir:value "Unbranded package with no container" ]
+         ]
+       ];
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "28314011000036104" ];
+       fhir:Coding.display [ fhir:value "paracetamol 500 mg tablet, 100" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Paracetamol 500mg (100)" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/Medication/GenericPack0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

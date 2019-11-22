@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="biologicalsex" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex" />
+  <version value="1.0.0" />
+  <name value="BiologicalSex" />
+  <status value="draft" />
+  <date value="2019-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="Patient"/>
+  </context>   
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Mandatory Extension Element for Biological Sex" />
+      <definition value="Mandatory Extension Element - found in all resources." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex" />
+    </element>
+    <element id="Extension.value[x]:valueCoding">
+      <path value="Extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Biological Sex as per Meteor" />
+        <valueSet value="http://meteor.aihw.gov.au/content/index.phtml/itemId/635126" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

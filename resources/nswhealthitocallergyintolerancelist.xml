@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nswhealthitocallergyintolerancelist" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocallergyintolerancelist" />
+  <version value="1.0.0" />
+  <name value="NSWHealthiTOCAllergyIntoleranceList" />
+  <status value="draft" />
+  <date value="2019-10-29" />
+  <publisher value="NSW eHealth" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List">
+      <path value="List" />
+      <short value="A list of allergies and/or intolerances in a NSW Health context." />
+    </element>
+	
+    <element id="List.status">
+      <path value="List.status"/>
+      <short value="current | retired | entered-in-error"/>
+      <definition value="Indicates the current state of this list."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="current"/>
+    </element>
+	
+    <element id="List.mode">
+      <path value="List.mode"/>
+      <short value="working | snapshot | changes"/>
+      <definition value="How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="snapshot"/>
+    </element>
+
+    <element id="List.entry.item">
+      <path value="List.entry.item"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocallergyintolerance"/>
+      </type>
+    </element>
+	
+    <element id="List.emptyReason">
+	   <path value="List.emptyReason"/>
+       <mustSupport value="true"/>	  
+    </element>
+	
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/tocpoc/v1.0/StructureDefinition/NSWHealthTOCPOCMedicationAdministration" />
+  <name value="NSWHealthTOCPOCMedicationAdministration" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/w5" />
+    <name value="W5 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w3c.prov" />
+    <uri value="http://www.w3.org/ns/prov" />
+    <name value="W3C PROV" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationAdministration" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-medicationadministration" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationAdministration">
+      <path value="MedicationAdministration" />
+      <short value="A record of medication administered to a patient in an Australian healthcare context." />
+    </element>
+    <element id="MedicationAdministration.extension">
+      <path value="MedicationAdministration.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationAdministration.extension:diluent">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="diluent" />
+      <short value="The diluent medication" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/tocpoc/v1.0/StructureDefinition/Diluent" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.category">
+      <path value="MedicationAdministration.category" />
+      <short value="The type of medication usage." />
+      <min value="1" />
+      <fixedCodeableConcept>
+        <text value="inpatient" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="MedicationAdministration.subject">
+      <path value="MedicationAdministration.subject" />
+      <short value="The patient who received the medication." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.performer">
+      <path value="MedicationAdministration.performer" />
+      <short value="The practioner(s) who performed the administration." />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.prescription">
+      <path value="MedicationAdministration.prescription" />
+      <short value="The MedicationRequest (i.e. Prescription) that this MedicationStatement is performed against." />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

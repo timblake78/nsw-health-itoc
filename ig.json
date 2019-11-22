@@ -1,0 +1,190 @@
+{
+    "sct-edition": "http://snomed.info/sct/32506021000036107",
+    "version": "4.0.1",
+    "fixed-business-version" : "1.0.0",
+    "title" : "NSW Health Integrated Transitions of Care (iTOC) Implementation Guide",
+    "source": "ig.xml",
+	"dependencyList": [ 
+	  {
+       "name" : "aubase",
+       "location" : "http://hl7.org.au/fhir",
+	   "version" : "current"
+      }
+	], 
+    "spreadsheets": [],
+    "special-urls": [
+        "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
+        "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
+        "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
+        "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
+        "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1",
+        "https://healthterminologies.gov.au/fhir/CodeSystem/concurrent-supply-grounds-1"
+	],
+    "extraTemplates": ["mappings"],
+    "defaults": {
+        "ConceptMap": {"template-base": "cm.html"},
+        "Any": {
+            "template-base": "base.html",
+            "template-format": "format.html"
+        },
+        "StructureDefinition": {
+            "template-base": "sd.html",
+            "template-defns": "sd-definitions.html",
+            "template-mappings": "sd-mappings.html"
+        },
+        "ValueSet": {"template-base": "vs.html"},
+        "CodeSystem": {"template-base": "cs.html"},
+        "Patient": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Composition": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "HealthcareService": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Practitioner": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "PractitionerRole": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Organization": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Specimen": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Location": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Address": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Medication": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Immunization": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "ImmunizationRecommendation": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "MedicationRequest": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "AllergyIntolerance": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "RelatedPerson": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },
+        "Endpoint": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        },	
+        "Observation": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        }
+    },
+    "tool": "jekyll",
+    "license": "CC0-1.0",
+    "canonicalBase": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0",
+    "paths": {
+        "temp": "temp",
+        "history" : "http://hl7.org.au/fhir/history.html",
+        "resources": [
+            "resources",
+            "examples"
+        ],
+        "pages": "pages",
+        "txCache": "txCache",
+        "output": "output",
+        "qa": "qa",
+        "specification": "http://hl7.org/fhir/R4/"
+    },
+    "npm-name": "nsw.health.fhir.itoc",
+    "resources": {
+
+        "StructureDefinition/nswhealthitocmessageheader": {
+            "base": "StructureDefinition-nswhealthitocmessageheader.html",
+            "defns": "StructureDefinition-nswhealthitocmessageheader-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocpatient": {
+            "base": "StructureDefinition-nswhealthitocpatient.html",
+            "defns": "StructureDefinition-nswhealthitocpatient-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocencounter": {
+            "base": "StructureDefinition-nswhealthitocencounter.html",
+            "defns": "StructureDefinition-nswhealthitocencounter-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocpractitioner": {
+            "base": "StructureDefinition-nswhealthitocpractitioner.html",
+            "defns": "StructureDefinition-nswhealthitocpractitioner-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocmedication": {
+            "base": "StructureDefinition-nswhealthitocmedication.html",
+            "defns": "StructureDefinition-nswhealthitocmedication-definitions.html"
+        },		
+        "StructureDefinition/nswhealthitocmedicationstatement": {
+            "base": "StructureDefinition-nswhealthitocmedicationstatement.html",
+            "defns": "StructureDefinition-nswhealthitocmedicationstatement-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocmedicationadministration": {
+            "base": "StructureDefinition-nswhealthitocmedicationadministration.html",
+            "defns": "StructureDefinition-nswhealthitocmedicationadministration-definitions.html"
+        },		
+        "StructureDefinition/nswhealthitocprescription": {
+            "base": "StructureDefinition-nswhealthitocorder.html",
+            "defns": "StructureDefinition-nswhealthitocprescription-definitions.html"
+        },		
+        "StructureDefinition/nswhealthitocdosage": {
+            "base": "StructureDefinition-nswhealthitocdosage.html",
+            "defns": "StructureDefinition-nswhealthitocdosage-definitions.html"
+        },
+        "StructureDefinition/nswhealthitocmedicationlist": {
+            "base": "StructureDefinition-nswhealthitocmedicationlist.html",
+            "defns": "StructureDefinition-nswhealthitocmedicationlist-definitions.html"
+        },		
+        "StructureDefinition/nswhealthitocallergyintolerance": {
+            "base": "StructureDefinition-nswhealthitocallergyintolerance.html",
+            "defns": "StructureDefinition-nswhealthitocallergyintolerance-definitions.html"
+        },		
+        "StructureDefinition/nswhealthitocallergyintolerancelist": {
+            "base": "StructureDefinition-nswhealthitocallergyintolerancelist.html",
+            "defns": "StructureDefinition-nswhealthitocallergyintolerancelist-definitions.html"
+        },		
+		"StructureDefinition/biologicalsex": {
+		  "base": "StructureDefinition-biologicalsex.html"
+		},
+		"StructureDefinition/diluent": {
+		  "base": "StructureDefinition-diluent.html"
+		},
+		"StructureDefinition/medicationcheckundertaken": {
+		  "base": "StructureDefinition-medicationcheckundertaken.html"
+		},
+		"OperationDefinition/medlist-lookup": {
+		  "base": "StructureDefinition-medlist-lookup.html"
+		},
+        "ValueSet/messagetype": {
+            "base": "ValueSet-messagetype.html",
+            "defns": "ValueSet-messagetype-definitions.html"
+        }		
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nswhealthitocmessageheader" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader" />
+  <version value="1.0.0" />
+  <name value="NSWHealthiTOCMessageHeader" />
+  <status value="draft" />
+  <date value="2019-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MessageHeader" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
+  <derivation value="constraint" />
+  <differential>
+
+	<element id="MessageHeader.event[x]:messagetype">
+		<path value="MessageHeader.event[x]"/>
+		<sliceName value="messagetype"/>
+		<min value="1"/>
+		<mustSupport value="true"/>
+		<binding>
+			<strength value="required"/>
+			<valueSet value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype"/>
+		</binding>
+	</element>
+	
+    <element id="MessageHeader.source">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="MessageSource" />
+      </extension>
+      <path value="MessageHeader.source" />
+      <short value="Message source application." />
+    </element>
+    <element id="MessageHeader.source.endpoint">
+      <path value="MessageHeader.source.endpoint" />
+      <short value="Actual message source address or id - identifies the routing target to send acknowledgements to." />
+      <definition value="Identifies the routing target to send acknowledgements to" />
+      <mustSupport value="true"/>	  
+    </element>
+  </differential>
+</StructureDefinition>

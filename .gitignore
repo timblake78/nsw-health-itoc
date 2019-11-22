@@ -1,0 +1,16 @@
+/qa
+/temp
+txCache/
+fhir-all-xsd/
+tmp/
+manual-fix/definitions.xml.zip
+manual-fix/definitions.xml/
+manual-fix/fixed/
+manual-fix/from/
+manual-fix/pd/
+manual-fix/pd-fixed/
+manual-fix/pd-from/
+.vs/au-fhir-base/v15/.suo
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
+.vs/slnx.sqlite-journal

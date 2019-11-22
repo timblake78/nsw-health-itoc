@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader xmlns="http://hl7.org/fhir">
+   <id value="example0"/>
+   <meta>
+	<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMessageHeader"/>
+  </meta>  
+   <eventCoding>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <code value="medication-history"/>
+   </eventCoding>
+   <source>
+      <name value="GH"/>
+	  <endpoint value="http://cerner.com" />
+   </source>
+</MessageHeader>

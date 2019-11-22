@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+	<id value="example0"/>
+	<meta>
+		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocencounter"/>
+	</meta>
+
+	<extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken">
+	   <valueBoolean value="true"/>
+	</extension> 
+	
+	<status value="finished"/>
+
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="ACUTE"/>
+    <display value="inpatient acute"/>
+  </class>
+  
+<type>
+   <coding>
+	  <system value="http://snomed.info/sct"/>
+	  <code value="424619006"/>
+	  <display value="Prenatal visit"/>
+   </coding>
+   <text value="Prenatal visit"/>
+</type>
+
+<subject>
+   <reference value="Patient/example0"/>
+   <display value="Stella Franklin"/>
+</subject>
+
+<participant>
+   <individual>
+	  <reference value="Practitioner/example0"/>
+	  <display value="Doctor Mayo"/>
+   </individual>
+</participant>
+
+<period>
+   <start value="2011-11-03T08:29:46+11:00"/>
+   <end value="2011-11-03T09:14:46+11:00"/>
+</period>
+
+<reasonCode>
+   <coding>
+	  <system value="http://snomed.info/sct"/>
+	  <code value="72892002"/>
+	  <display value="Normal pregnancy"/>
+   </coding>
+</reasonCode>
+
+</Encounter>

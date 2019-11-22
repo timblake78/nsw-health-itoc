@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="ncdhc-metadata"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+     
+  <p>FHIR Version: 3.0.1<br/>Supported formats: json<br/>Published:2019-01-04<br/>Published by: National Children's Digital Health Collaborative</p>
+<p>This profile defines the expected capabilities of NCDHC Data Hub server when conforming to the NCDHC Data Hub IG The capabilitystatement resource includes the complete list of actual profiles, RESTful operations, and search parameters supported the Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+<h4>RESTful Behavior</h4>
+<hr/>
+<div>
+<p><strong>The NCDHC Data Hub Server SHALL:</strong></p>
+<ol>
+<li>Support NCDHC Patient resource profile.</li>
+<li>Support at least one additional resource profile from the list of NCDHC Data Hub Profiles</li>
+<li>Implement REST behavior according to the FHIR specification</li>
+<li>Support json resource formats for all NCDHC Data Hub interactions.</li>
+<li>Identify the NCDHC Data Hub profile(s) supported as part of the <a href="http://build.fhir.org/resource-definitions.html#Meta.profile">FHIR Meta profile attribute</a>for each instance.</li>
+<li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li>
+</ol>
+<p><strong>The NCDHC Data Hub Server SHOULD:</strong></p>
+<ol>
+<li>Support json resource formats for all NCDHC Data Hub interactions.</li>
+</ol>
+</div>
+<div>Security:
+<p><strong>NCDHC Data Hub Servers SHALL</strong></p>
+<ol>
+<li>implement the <a href="https://oauth.net/2/">OAuth 2.0 </a>documented in this guide</li>
+<li>A server has ensured that every API request includes a valid Authorization token, supplied via:<code>Authorization: Bearer {server-specific-token-here}</code></li>
+<li>A server has rejected any unauthorized requests by returning an<code>HTTP 401</code>Unauthorized response code.</li>
+</ol>
+<h4>Non NCDHC Profile Summary:</h4>
+<p>The below is the list of additional profiles supported by the NCDHC Data Hub.</p>
+<table border="1" style="border-collapse: collapse; width: 139.646%; height: 162px;"><tbody><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;"><strong>Profile Name</strong></td><td style="width: 26.1322%; height: 18px;"><strong>Profile Type</strong></td><td style="width: 117.496%; height: 18px;"><strong>URL</strong></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">Bundle</td><td style="width: 26.1322%; height: 18px;">International</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org/fhir/STU3/bundle.html">http://hl7.org/fhir/STU3/bundle.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">OperationOutcome</td><td style="width: 26.1322%; height: 18px;">International</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org/fhir/STU3/operationoutcome.html">http://hl7.org/fhir/STU3/operationoutcome.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">CapabilityStatement</td><td style="width: 26.1322%; height: 18px;">International</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org/fhir/STU3/capabilitystatement.html">http://hl7.org/fhir/STU3/capabilitystatement.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">Person</td><td style="width: 26.1322%; height: 18px;">International</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org/fhir/STU3/person.html">http://hl7.org/fhir/STU3/person.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">RelatedPerson</td><td style="width: 26.1322%; height: 18px;">Australia Base Profile</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-relatedperson.html">http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-relatedperson.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;">Organisation</td><td style="width: 26.1322%; height: 18px;">Australia Base Profile</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-organisation.html">http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-organisation.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;"><span>Practitioner</span></td><td style="width: 26.1322%; height: 18px;">Australia Base Profile</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-practitioner.html">http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-practitioner.html</a></td></tr><tr style="height: 18px;"><td style="width: 16.6667%; height: 18px;"><span>Device</span></td><td style="width: 26.1322%; height: 18px;">Australia Base Profile</td><td style="width: 117.496%; height: 18px;"><a href="http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-device.html">http://hl7.org.au/fhir/base/aubase1/StructureDefinition-au-device.html</a></td></tr></tbody></table>
+<hr/>
+<div/>
+</div>    
+    
+    </div>
+  </text>
+  <url value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/CapabilityStatement/ncdhc-metadata"/>
+  <name value="National Children's Digital Health Collaborative CapabilityStatement"/>
+  <title value="National Children's Digital Health Collaborative CapabilityStatement"/>
+  <status value="draft"/>
+  <date value="2018-12-18T00:00:00+00:00"/>
+  <publisher value="National Children's Digital Health Collaborative"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Capability Statement for National Children's Digital Health Collaborative"/>
+  <kind value="instance"/>
+  <software>
+    <name value="NCDHC FHIR Server"/>
+    <version value="v1.0.0"/>
+    <releaseDate value="2019-12-02T00:00:00+00:00"/>
+  </software>
+  <implementation>
+    <description value="NCDHC FHIR Server"/>
+    <url value="https://ncdhc.gov.au"/>
+  </implementation>
+  <fhirVersion value="4.0.0"/>
+  <acceptUnknown value="no"/>
+  <format value="xml"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Capability Statement for National Children's Digital Health Collaborative"/>
+    <security>
+      <extension url="http://hl7.org.au/fhir/ch/v1/StructureDefinition/StructureDefinition/oauth-uris">
+        <extension url="authorize">
+          <valueUri value="https://ncdhc.health.gov.au/api/oauth/authorize"/>
+        </extension>
+        <extension url="token">
+          <valueUri value="https://ncdhc.health.gov.au/api/oauth/token"/>
+        </extension>
+      </extension>
+      <cors value="true"/>
+      <service>
+        <coding>
+          <system value="http://hl7.org/fhir/restful-security-service"/>
+          <code value="SMART-on-FHIR"/>
+        </coding>
+      </service>
+      <description value="NCDHC FHIR servers use standard OAuth 2.0 for Consumer interactions and JWT for provider interactions. Both Consumer and Provider interactsion are supported by Smart-On-FHIR Launch sequences"/>
+    </security>
+    <resource>
+      <type value="AuditEvent"/>
+      <profile>
+        <reference value="http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-audit-event"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the AuditEvent resource"/>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Search AuditEvent details for a given search critriea as provided in the searchParam section"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Create AuditEvent for each interaction happening in the Data Hub. This SHOULD be used by the Hub internally and SHOULD NOT be exposed EXTERNALLY."/>
+      </interaction>
+      <versioning value="no-version"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Patient reference for which the AuditEvent instances should be fetched"/>
+      </searchParam>
+      <searchParam>
+        <name value="agent"/>
+        <type value="reference"/>
+        <documentation value="Identifier of who"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Time when the event was recorded. System SHALL support 'ge', 'le' and 'eq' search as per FHIR standard"/>
+      </searchParam>
+      <searchParam>
+        <name value="agent-role"/>
+        <type value="token"/>
+        <documentation value="Agent role in the event"/>
+      </searchParam>
+      <searchParam>
+        <name value="action"/>
+        <type value="token"/>
+        <documentation value="Type of action performed during the event"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <profile>
+        <reference value="http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the Patient resource"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Reads a Patient instance based on the input Patient.id"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Retrieves the history of a particular Patient as per the document id (Patient.id) provided."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="When a client searches patients with no search criteria, they get a list of all patients they have access too. Servers may elect to offer additional search parameters, but this is not required"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Creates a new Patient in the Child Data Hub. Duplicates are not allowed. The server SHOULD return back the newly created resouce to the client. The server enforces use of 'Prefer' tag with value as 'representation'. This is only allowed for internal use during registration. This interface SHOULD NOT be exposed EXTERNALLY."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="System allows updating a Patient instance. This is only allowed for internal use during update to Patient profile. This interface is not exposed to external"/>
+      </interaction>
+      <versioning value="versioned"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="true"/>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Search Patient based on the identifier"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <profile>
+        <reference value="http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the Observation instances"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Reads an Observation instance based on the input Observation.id. The returned resource SHALL have an id element with a value that is the [id]"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Retrieves the history of a particular Observation as per the document id (Observation.id) provided."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Returns a Bundle of Observation resources for the Patient in context."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the observation is about (if patient). This is requried if the search is not for the looged in user but for a patient that the logged in user has access to."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="The code of the observation type"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="The classification of the type of observation"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationStatement"/>
+      <profile>
+        <reference value="http://hl7.org/fhir/2018Jan/medicationstatement"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the MedicationStatement instances."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Reads an MedicationStatement instance based on the input MedicationStatement.id. The returned resource SHALL have an id element with a value that is the [id]"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Retrieves the history of a particular Observation as per the document id (Observation.id) provided."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Returns a Bundle of MedicationStatement resources for the Patient in context."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the MedicationStatement is about (if patient). This is requried if the search is not for the looged-in user but for a patient that the logged-in user has access to."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Return statements of this medication code"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Returns statements of this category of medicationstatement"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Immunization"/>
+      <profile>
+        <reference value="http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-immunisation"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the Immunization instances"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Reads an Immunization instance based on the input Immunization.id. The returned resource SHALL have an id element with a value that is the [id]"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Retrieves the history of a particular Immunization as per the document id (Immunization.id) provided."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Returns a Bundle of Immunization resources for the Patient in context."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the Immunization is about (if patient). This is requried if the search is not for the looged in user but for a patient that the logged in user has access to."/>
+      </searchParam>
+      <searchParam>
+        <name value="vaccine-code"/>
+        <type value="token"/>
+        <documentation value="Vaccine Product Administered"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Composition"/>
+      <profile>
+        <reference value="http://hl7.org/fhir/2018Jan/composition"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the Composition instances"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="System allows user to read a particular Composition"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="System allows reading history of a Composition instance"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Returns a Bundle of Bundle containing the Composition resources for the Patient in context."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Reference to the Patient for whom the Composition should be pulled. If the reference is not provided in the request, system should try to pull the Composition instances associated to the logged in user (Patient associated to the access token)"/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Status of the Composition instances to fetch. The allowed values are final | amended"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Type code of the Composition instances to fetch"/>
+      </searchParam>
+      <searchParam>
+        <name value="class"/>
+        <type value="token"/>
+        <documentation value="Class code of the Composition instances to fetch"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Search by Composition instances editing time. The system should support 'ge','le','eq' searches as defined in FHIR"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Bundle"/>
+      <profile>
+        <reference value="https://hl7.org/fhir/2018Jan/bundle"/>
+      </profile>
+      <documentation value="Provide details on what can be done on the Bundle instances"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="System allows user to read a particular Bundle (FHIR Document)"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="System allows reading history of a Bundle instance"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="When a client searches Bundle with no search criteria, they get a list of all Bundle instances they have access too. Servers may elect to offer additional search parameters, but this is not required"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="System allows creating a Bundle document instance."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="System allows updating a Bundle document instance."/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+        <documentation value="System allows deleting a Bundle document instance."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="true"/>
+      <conditionalDelete value="single"/>
+      <searchParam>
+        <name value="composition.subject"/>
+        <type value="reference"/>
+        <documentation value="Reference to the Patient for whom the Bundle should be pulled. If the reference is not provided in the request, system should try to pull the Bundle instances associated to the logged in user (Patient associated to the access token). This field is mandatory when used by provider system."/>
+      </searchParam>
+      <searchParam>
+        <name value="composition.status"/>
+        <type value="token"/>
+        <documentation value="Status of the Bundle instances to fetch. The allowed values are final | amended"/>
+      </searchParam>
+      <searchParam>
+        <name value="composition.type"/>
+        <type value="token"/>
+        <documentation value="Type code of the Bundle instances to fetch"/>
+      </searchParam>
+      <searchParam>
+        <name value="composition.class"/>
+        <type value="token"/>
+        <documentation value="Class code of the Bundle instances to fetch"/>
+      </searchParam>
+      <searchParam>
+        <name value="composition.date"/>
+        <type value="date"/>
+        <documentation value="Search by Bundle instances editing time. The system should support 'ge','le','eq' searches as defined in FHIR"/>
+      </searchParam>
+    </resource>
+    <operation>
+      <name value="NCDHC OperationDefination $access"/>
+      <definition>
+        <reference value="http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-patient-access"/>
+      </definition>
+    </operation>
+  </rest>
+  <document>
+    <mode value="consumer"/>
+    <documentation value="FHIR Document Support for Newborn Delivery Health Interaction"/>
+    <profile>
+      <reference value="http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-nbdelivery"/>
+    </profile>
+  </document>
+</CapabilityStatement>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="nswhealth-itoc"/>
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc"/>
+  <version value="1.0.0"/>
+  <name value="NSWHealthTOCImplementationGuide"/>
+  <title value="NSW Health Integrated Transitions of Care (iTOC) Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-10-29"/>
+  <publisher value="NSW Health"/>
+  <contact>
+    <name value="NSW eHealth Transitions of Care Project"/>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="nsw.health.fhir.toc"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+    </grouping>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocmessageheader"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocpatient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocencounter"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocpractitioner"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocmedication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocmedicationstatement"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocmedicationadministration"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocorder"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocdosage"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocmedicationlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocallergyintolerance"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="StructureDefinition/nswhealthitocallergyintolerancelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+	
+	<resource>
+		<reference>
+			<reference value="StructureDefinition/biologicalsex"/>
+		</reference>
+   	    <exampleBoolean value="false"/>
+	    <groupingId value="p1"/>
+	</resource>		
+	<resource>
+		<reference>
+			<reference value="StructureDefinition/diluent"/>
+		</reference>
+   	    <exampleBoolean value="false"/>
+	    <groupingId value="p1"/>
+	</resource>
+	<resource>
+		<reference>
+			<reference value="StructureDefinition/medicationcheckundertaken"/>
+		</reference>
+   	    <exampleBoolean value="false"/>
+	    <groupingId value="p1"/>
+	</resource>
+	<resource>
+		<reference>
+			<reference value="OperationDefinition/medlist-lookup"/>
+		</reference>
+   	    <exampleBoolean value="false"/>
+	    <groupingId value="p1"/>
+	</resource>		
+    <resource>
+      <reference>
+        <reference value="ValueSet/messagetype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>	
+
+    <resource>
+      <reference>
+        <reference value="Patient/example0"/>
+      </reference>
+      <name value="Patient with IHI and Medicare Number"/>
+      <description value="Shows a typical patient using identifier profiles for IHI, Medicare Number and the extension for Indigenous Status"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="Practitioner/example0"/>
+      </reference>
+      <name value="Practitioner with HPI-I, Prescriber Number and AHPRA Registration Number"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="Practitioner/example1"/>
+      </reference>
+      <name value="Registered Nurse"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="Practitioner/example2"/>
+      </reference>
+      <name value="Registered Nurse"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>		
+	<resource>
+      <reference>
+        <reference value="MedicationStatement/patientprofile1-medhistory-example0"/>
+      </reference>
+      <name value="Basic MedicationStatement example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="MedicationStatement/patientprofile1-medhistory-example1"/>
+      </reference>
+      <name value="Basic MedicationStatement example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="MedicationStatement/patientprofile1-medhistory-example2"/>
+      </reference>
+      <name value="Basic MedicationStatement example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="List/medhistory-list-example0"/>
+      </reference>
+      <name value="Basic Medication List example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="Encounter/example0"/>
+      </reference>
+      <name value="Basic Encounter example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>		
+	<resource>
+      <reference>
+        <reference value="Bundle/patientprofile1-medhistory"/>
+      </reference>
+      <name value="Basic Bundle example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+	<resource>
+      <reference>
+        <reference value="MessageHeader/example0"/>
+      </reference>
+      <name value="Basic Message Header example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="MedicationAdministration/patientprofile1-mar-example0"/>
+      </reference>
+      <name value="Basic MedicationAdministration example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	<resource>
+      <reference>
+        <reference value="Medication/GenericPack0"/>
+      </reference>
+      <name value="Basic Medication example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>			
+	<resource>
+      <reference>
+        <reference value="MedicationRequest/example0"/>
+      </reference>
+      <name value="Basic MedicationOrder example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+	
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="NSW Health Integrated Transitions of Care (iTOC) Implementation Guide"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

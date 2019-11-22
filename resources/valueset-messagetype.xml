@@ -1,0 +1,48 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+	<id value="messagetype"/>
+	<url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype"/>
+    <identifier> 
+	   <system value="urn:ietf:rfc:3986"/> 
+       <value value="urn:oid:2.16.840.1.113883.2.3.4.2.2.16"/> 
+    </identifier>
+	<version value="1.0.2"/>
+	<name value="MessageHeaderType"/>
+	<title value="Message Header Type"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2019-11-22"/>
+	<publisher value="NSW eHealth"/>
+	<description value="Message Header Types for Integrated Transitions of Care (iTOC) Messages"/>
+	
+  <compose>
+     <include>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <concept>
+        <code value="medication-list"/>
+		<display value="This message is a medication list" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <concept>
+        <code value="medication-history"/>
+		<display value="This message is a medication history" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <concept>
+        <code value="medication-administration-record"/>
+		<display value="This message is a medication administration record" />
+      </concept>
+    </include>
+	<include>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <concept>
+        <code value="reconciled-medication-list"/>
+		<display value="This message is a reconciled medication list" />
+      </concept>
+    </include>
+  </compose>
+
+</ValueSet>
