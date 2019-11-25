@@ -159,7 +159,34 @@
     },
     {
       "reference" : {
+        "reference" : "OperationDefinition/medhistory-lookup"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "OperationDefinition/mar-lookup"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "OperationDefinition/post-medlist"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/messagetype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/messagetype"
       },
       "exampleBoolean" : false
     },
@@ -262,7 +289,15 @@
     },
     {
       "reference" : {
-        "reference" : "Medication/GenericPack0"
+        "reference" : "MedicationRequest/example0"
+      },
+      "name" : "Basic MedicationOrder example",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Medication/example0"
       },
       "name" : "Basic Medication example",
       "exampleBoolean" : true,
@@ -270,9 +305,9 @@
     },
     {
       "reference" : {
-        "reference" : "MedicationRequest/example0"
+        "reference" : "Medication/example1"
       },
-      "name" : "Basic MedicationOrder example",
+      "name" : "Medication example including Cerner and IMDsoft medication codings",
       "exampleBoolean" : true,
       "groupingId" : "p1"
     }],

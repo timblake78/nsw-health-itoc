@@ -4,7 +4,7 @@
   <id value="messagetype"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Message Header Type</h2><div><p>Message Header Types for Integrated Transitions of Care (iTOC) Messages</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>medication-list</td><td>This message is a medication list</td><td/></tr></table></li><li>Include these codes as defined in <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>medication-history</td><td>This message is a medication history</td><td/></tr></table></li><li>Include these codes as defined in <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>medication-administration-record</td><td>This message is a medication administration record</td><td/></tr></table></li><li>Include these codes as defined in <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>reconciled-medication-list</td><td>This message is a reconciled medication list</td><td/></tr></table></li></ul></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes</code></li></ul></div>
   </text>
   <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype"/>
   <identifier>
@@ -22,31 +22,6 @@
   <compose>
     <include>
       <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
-      <concept>
-        <code value="medication-list"/>
-        <display value="This message is a medication list"/>
-      </concept>
-    </include>
-    <include>
-      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
-      <concept>
-        <code value="medication-history"/>
-        <display value="This message is a medication history"/>
-      </concept>
-    </include>
-    <include>
-      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
-      <concept>
-        <code value="medication-administration-record"/>
-        <display value="This message is a medication administration record"/>
-      </concept>
-    </include>
-    <include>
-      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
-      <concept>
-        <code value="reconciled-medication-list"/>
-        <display value="This message is a reconciled medication list"/>
-      </concept>
     </include>
   </compose>
 </ValueSet>

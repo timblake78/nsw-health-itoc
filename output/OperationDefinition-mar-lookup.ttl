@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/OperationDefinition/mar-lookup> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mar-lookup"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicationAdministrationRecordLookup</h2><p>OPERATION: MedicationAdministrationRecordLookup</p><p>The official URL for this operation definition is: </p><pre>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mar-lookup</pre><p>URL: [base]/Bundle/$mar-lookup</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>The Patient for which the medication administration record is requested. The client system SHALL provide the following details as a part of the Patient resource:\\r\\n1. MRN as identifier\\r\\n2. Name\\r\\n3. birthDate\\r\\n4. Gender</p>\n</div></td></tr><tr><td>OUT</td><td>bundle</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The medication administration record Bundle if the Patient exists. The system SHALL return back the medication administration record Bundle as specified in this implementation guide.</p>\n</div></td></tr><tr><td>OUT</td><td>outcome</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>An OperationOutcome containing information on the result.</p>\n</div></td></tr></table><div><p>This operation should be used to look up a patient's medication administration record. The system will return a bundle with the medication administration record if the patient exists.</p>\n</div></div>"
+  ];
+  fhir:OperationDefinition.url [ fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mar-lookup"];
+  fhir:OperationDefinition.version [ fhir:value "1.0.0"];
+  fhir:OperationDefinition.name [ fhir:value "MedicationAdministrationRecordLookup"];
+  fhir:OperationDefinition.status [ fhir:value "active"];
+  fhir:OperationDefinition.kind [ fhir:value "operation"];
+  fhir:OperationDefinition.date [ fhir:value "2019-10-29T00:00:00+11:00"^^xsd:dateTime];
+  fhir:OperationDefinition.publisher [ fhir:value "NSW eHealth"];
+  fhir:OperationDefinition.purpose [ fhir:value "To allow medication administration record lookup by patient MRN"];
+  fhir:OperationDefinition.code [ fhir:value "mar-lookup"];
+  fhir:OperationDefinition.comment [ fhir:value "This operation should be used to look up a patient's medication administration record. The system will return a bundle with the medication administration record if the patient exists."];
+  fhir:OperationDefinition.resource [
+     fhir:value "Bundle";
+     fhir:index 0
+  ];
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "subject" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The Patient for which the medication administration record is requested. The client system SHALL provide the following details as a part of the Patient resource:\\r\\n1. MRN as identifier\\r\\n2. Name\\r\\n3. birthDate\\r\\n4. Gender" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Patient" ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "bundle" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The medication administration record Bundle if the Patient exists. The system SHALL return back the medication administration record Bundle as specified in this implementation guide." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Bundle" ]
+  ], [
+     fhir:index 2;
+     fhir:OperationDefinition.parameter.name [ fhir:value "outcome" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "An OperationOutcome containing information on the result." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "OperationOutcome" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/OperationDefinition/mar-lookup.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

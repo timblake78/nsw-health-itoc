@@ -1,0 +1,41 @@
+{
+  "resourceType": "Medication",
+  "id": "example0",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>code</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = '23519011000036101', given as 'amlodipine 10 mg tablet (medicinal product unit of use)'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+      "valueString": "Norvasc"
+    },
+    {
+      "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+      "valueString": "Amlodipine"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+            "valueCoding": {
+              "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+              "code": "UPDSF",
+              "display": "Unbranded product with strengths and form"
+            }
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "23519011000036101",
+        "display": "amlodipine 10 mg tablet (medicinal product unit of use)"
+      }
+    ],
+    "text": "Amlodipine 10 mg Tablet"
+  },
+  "form": {
+    "text": "Tablet"
+  }
+}

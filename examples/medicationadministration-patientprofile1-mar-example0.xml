@@ -2,7 +2,7 @@
 <MedicationAdministration xmlns="http://hl7.org/fhir">
    <id value="patientprofile1-mar-example0"/>    
    <meta>
-		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationAdministration"/>
+		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration"/>
    </meta>
    
 	<status value="completed"/>

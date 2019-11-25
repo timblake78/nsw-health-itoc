@@ -11,14 +11,14 @@
   fhir:Resource.id [ fhir:value "patientprofile1-medhistory-example0"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement";
+       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement";
        fhir:index 0;
-       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement>
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example0</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = '23519011000036101', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"Patient-example0.html\">Stella Franklin. Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, medicalRecordNumber = 123456789, auID = 123456789; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"Practitioner-example0.html\">Doctor Mayo. Generated Summary: id: example0; HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'High blood pressure', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>note</b>: The patient is not sure when exactly started taking the medication but is certain it's been over a year</p><p><b>dosage</b>: </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example0</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = '23519011000036101', given as 'amlodipine 10 mg tablet (medicinal product unit of use)'})</span></p><p><b>subject</b>: <a href=\"Patient-example0.html\">Stella Franklin. Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, medicalRecordNumber = 123456789, auID = 123456789; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"Practitioner-example0.html\">Doctor Mayo. Generated Summary: id: example0; HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = '38341003', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>note</b>: The patient is not sure when exactly started taking the medication but is certain it's been over a year</p><p><b>dosage</b>: </p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -53,7 +53,7 @@
        ];
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "23519011000036101" ];
-       fhir:Coding.display [ fhir:value "amlodipine 10 mg tablet" ]
+       fhir:Coding.display [ fhir:value "amlodipine 10 mg tablet (medicinal product unit of use)" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Amlodipine 10 mg Tablet" ]
   ];

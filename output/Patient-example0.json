@@ -3,7 +3,7 @@
   "id": "example0",
   "meta": {
     "profile": [
-      "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCPatient"
+      "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient"
     ]
   },
   "text": {

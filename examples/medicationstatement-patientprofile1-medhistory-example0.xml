@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
    <id value="patientprofile1-medhistory-example0"/>    
    <meta>
-		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement"/>
+		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"/>
    </meta>
    
 	<extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
@@ -34,7 +34,7 @@
 		  </extension>
 		  <system value="http://snomed.info/sct"/>
 		  <code value="23519011000036101"/>
-		  <display value="amlodipine 10 mg tablet"/>
+		  <display value="amlodipine 10 mg tablet (medicinal product unit of use)"/>
 		</coding>
 		<text value="Amlodipine 10 mg Tablet"/>		
 	</medicationCodeableConcept>

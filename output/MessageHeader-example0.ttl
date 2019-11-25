@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "example0"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMessageHeader";
+       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader";
        fhir:index 0;
-       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMessageHeader>
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader>
      ]
   ];
   fhir:DomainResource.text [

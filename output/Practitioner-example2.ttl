@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "example2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCPractitioner";
+       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner";
        fhir:index 0;
-       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCPractitioner>
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner>
      ]
   ];
   fhir:DomainResource.text [

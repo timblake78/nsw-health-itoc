@@ -2,7 +2,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="example1"/>
   <meta>
-	<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCPractitioner"/>
+	<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"/>
   </meta>
   
   	<identifier>

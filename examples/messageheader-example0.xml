@@ -2,7 +2,7 @@
 <MessageHeader xmlns="http://hl7.org/fhir">
    <id value="example0"/>
    <meta>
-	<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMessageHeader"/>
+	<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"/>
   </meta>  
    <eventCoding>
       <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>

@@ -2,7 +2,7 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="example0"/>
 	<meta>
-		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCPatient"/>
+		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient"/>
 	</meta>
 	
 	<extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex">

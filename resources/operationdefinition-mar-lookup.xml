@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="mar-lookup" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mar-lookup" />
+  <version value="1.0.0" />
+  <name value="MedicationAdministrationRecordLookup" />
+  <status value="active" />
+  <kind value="operation" />
+  <date value="2019-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <purpose value="To allow medication administration record lookup by patient MRN" />
+  <code value="mar-lookup" />
+  <comment value="This operation should be used to look up a patient's medication administration record. The system will return a bundle with the medication administration record if the patient exists." />
+  <resource value="Bundle" />
+  <system value="false" />
+  <type value="true" />
+  <instance value="false" />
+  
+  <parameter>
+	<name value="subject" />
+	<use value="in" />
+	<min value="1" />
+	<max value="1" />
+	<documentation value="The Patient for which the medication administration record is requested. The client system SHALL provide the following details as a part of the Patient resource:\r\n1. MRN as identifier\r\n2. Name\r\n3. birthDate\r\n4. Gender" />
+	<type value="Patient" />
+  </parameter>
+
+  <parameter>
+	<name value="bundle" />
+	<use value="out" />
+	<min value="0" />
+	<max value="1" />
+	<documentation value="The medication administration record Bundle if the Patient exists. The system SHALL return back the medication administration record Bundle as specified in this implementation guide." />
+	<type value="Bundle" />
+  </parameter>
+
+  <parameter>
+	<name value="outcome" />
+	<use value="out" />
+	<min value="1" />
+	<max value="1" />
+	<documentation value="An OperationOutcome containing information on the result." />
+	<type value="OperationOutcome" />
+  </parameter>
+
+</OperationDefinition>

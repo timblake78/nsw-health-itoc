@@ -3,7 +3,7 @@
   "id": "patientprofile1-medhistory-example2",
   "meta": {
     "profile": [
-      "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement"
+      "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"
     ]
   },
   "text": {

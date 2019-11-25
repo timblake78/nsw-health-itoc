@@ -155,7 +155,34 @@
     </resource>
     <resource>
       <reference>
+        <reference value="OperationDefinition/medhistory-lookup"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/mar-lookup"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/post-medlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/messagetype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/messagetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -258,7 +285,15 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Medication/GenericPack0"/>
+        <reference value="MedicationRequest/example0"/>
+      </reference>
+      <name value="Basic MedicationOrder example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/example0"/>
       </reference>
       <name value="Basic Medication example"/>
       <exampleBoolean value="true"/>
@@ -266,9 +301,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="MedicationRequest/example0"/>
+        <reference value="Medication/example1"/>
       </reference>
-      <name value="Basic MedicationOrder example"/>
+      <name value="Medication example including Cerner and IMDsoft medication codings"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>

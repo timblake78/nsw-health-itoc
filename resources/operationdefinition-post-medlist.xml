@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="post-medlist" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/post-medlist" />
+  <version value="1.0.0" />
+  <name value="PostMedicationList" />
+  <status value="active" />
+  <kind value="operation" />
+  <date value="2019-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <purpose value="To allow the posting of a reconciled medication list" />
+  <code value="post-medlist" />
+  <comment value="This operation should be used to post a reconciled patient medication list. The system will return an OperationOutcome with the outcome of the operation." />
+  <resource value="Bundle" />
+  <system value="false" />
+  <type value="true" />
+  <instance value="false" />
+
+  <parameter>
+	<name value="bundle" />
+	<use value="in" />
+	<min value="1" />
+	<max value="1" />
+	<documentation value="The reconciled medication list Bundle for the patient. The system SHALL return an OperationOutcome with the outcome of the operation." />
+	<type value="Bundle" />
+  </parameter>
+
+  <parameter>
+	<name value="outcome" />
+	<use value="out" />
+	<min value="1" />
+	<max value="1" />
+	<documentation value="An OperationOutcome containing information on the result." />
+	<type value="OperationOutcome" />
+  </parameter>
+
+</OperationDefinition>

@@ -182,9 +182,22 @@
 		"OperationDefinition/medlist-lookup": {
 		  "base": "StructureDefinition-medlist-lookup.html"
 		},
-        "ValueSet/messagetype": {
+		"OperationDefinition/medhistory-lookup": {
+		  "base": "StructureDefinition-medhistory-lookup.html"
+		},
+		"OperationDefinition/mar-lookup": {
+		  "base": "StructureDefinition-mar-lookup.html"
+		},
+		"OperationDefinition/post-medlist": {
+		  "base": "StructureDefinition-post-medlist.html"
+		},
+        "CodeSystem/messagetype": {
+            "base": "CodeSystem-messagetype.html",
+            "defns": "CodeSystem-messagetype-definitions.html"
+        },        
+		"ValueSet/messagetype": {
             "base": "ValueSet-messagetype.html",
             "defns": "ValueSet-messagetype-definitions.html"
-        }		
+        }
     }
 }

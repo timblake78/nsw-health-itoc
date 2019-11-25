@@ -11,9 +11,9 @@
   fhir:Resource.id [ fhir:value "patientprofile1-medhistory-example2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement";
+       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement";
        fhir:index 0;
-       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/NSWHealthiTOCMedicationStatement>
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement>
      ]
   ];
   fhir:DomainResource.text [

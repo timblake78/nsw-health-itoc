@@ -5,4 +5,6 @@ A medication for use in a NSW Health context.
 
 **Examples**
 
-[Basic Medication - Generic Pack](Medication-GenericPack0.html)
+[Basic Medication](Medication-example0.html)
+
+[Medication including Cerner and IMDsoft codes](Medication-example1.html)

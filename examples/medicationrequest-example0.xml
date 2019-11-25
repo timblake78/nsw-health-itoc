@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="example0"/>
-
+	<meta>
+		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
+	</meta>  
+		  
 	<extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
 	   <valueString value="APO"/>
 	</extension>  

@@ -120,7 +120,7 @@ Formats: <a href="OperationDefinition-medlist-lookup.xml.html">XML</a>, <a href=
 </p>
 
 <div xmlns="http://www.w3.org/1999/xhtml"><h2>MedicationListLookup</h2><p>OPERATION: MedicationListLookup</p><p>The official URL for this operation definition is: </p><pre>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medlist-lookup</pre><p>URL: [base]/Bundle/$medlist-lookup</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>The Patient for which the medication list is requested. The client system SHALL provide the following details as a part of the Patient resource:\r\n1. MRN as identifier\r\n2. Name\r\n3. birthDate\r\n4. Gender</p>
-</div></td></tr><tr><td>OUT</td><td>bundle</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The medication list Bundle if the Patient exists. The system SHALL return back the medication list Bundle as specific in this implementation guide.</p>
+</div></td></tr><tr><td>OUT</td><td>bundle</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The medication list Bundle if the Patient exists. The system SHALL return back the medication list Bundle as specified in this implementation guide.</p>
 </div></td></tr><tr><td>OUT</td><td>outcome</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>An OperationOutcome containing information on the result.</p>
 </div></td></tr></table><div><p>This operation should be used to look up a patient's medication list. The system will return a bundle with the medication list if the patient exists.</p>
 </div></div>
@@ -149,7 +149,7 @@ Formats: <a href="OperationDefinition-medlist-lookup.xml.html">XML</a>, <a href=
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Fri, Nov 22, 2019 11:30+1100. |
+        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Nov 25, 2019 12:44+1100. |
              <!--  <a style="color: #81BEF7" rel="license" <!-- <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -324,6 +324,57 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-medhistory-lookup.html"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/medhistory-lookup"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-mar-lookup.html"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/mar-lookup"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-post-medlist.html"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/post-medlist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
@@ -333,6 +384,22 @@
         ],
         "reference": {
           "reference": "ValueSet/messagetype"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-messagetype.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/messagetype"
         },
         "exampleBoolean": false
       },
@@ -557,24 +624,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Medication-GenericPack0.html"
-          }
-        ],
-        "reference": {
-          "reference": "Medication/GenericPack0"
-        },
-        "name": "Basic Medication example",
-        "exampleBoolean": true,
-        "groupingId": "p1"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           },
           {
@@ -586,6 +635,42 @@
           "reference": "MedicationRequest/example0"
         },
         "name": "Basic MedicationOrder example",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Medication-example0.html"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/example0"
+        },
+        "name": "Basic Medication example",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Medication-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/example1"
+        },
+        "name": "Medication example including Cerner and IMDsoft medication codings",
         "exampleBoolean": true,
         "groupingId": "p1"
       }
