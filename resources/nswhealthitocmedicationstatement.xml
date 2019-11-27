@@ -54,6 +54,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
     </element>
+	<element id="MedicationStatement.medication[x]:medicationReference">
+		<path value="MedicationStatement.medicationReference"/>
+		<sliceName value="medicationReference"/>
+        <type>
+          <code value="Reference"/>
+          <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication"/>
+        </type>
+	</element>	
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="cerner"/>
@@ -73,6 +81,7 @@
 		<path value="MedicationStatement.medication[x].coding.system"/>
 		<min value="1"/>
 		<fixedUri value="http://www.imd-soft.com/itoc/codes"/>
-	</element>	
+	</element>
+
   </differential>
 </StructureDefinition>

@@ -142,6 +142,9 @@
 
 <h2 id="medication-list">Medication List</h2>
 
+<p>The medication list bundle can be retrieved using the <a href="StructureDefinition-medlist-lookup.html">$medlist-lookup</a> operation.
+<br /><br /></p>
+
 <p>The following diagram shows the logical model for Medication List:</p>
 
 <div>
@@ -152,15 +155,18 @@
 <ul>
   <li>Medication lists should be sent as a Bundle with type=”message”.</li>
   <li>All resources should be included directly as root level entries in the bundle, with appropriate id references between resources.  Where URL locators are not available, uuids should be used.</li>
-  <li>The medication list bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource as its first entry.</li>
-  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource should have a fixed event code of “medication-list”.</li>
-  <li>The medication list bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">nswhealthitocpatient</a> resource.</li>
+  <li>The medication list bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource as its first entry.</li>
+  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource should have a fixed event code of “medication-list”.</li>
+  <li>The medication list bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">NSWHealthiTOCPatient</a> resource.</li>
   <li>The medication list bundle must contain a single List resource which provides an order for the MedicationStatements in the bundle. Target systems may process this List if they are capable of doing so.</li>
-  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationstatement.html">nswhealthitocmedicationstatement</a> resources.
+  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationstatement.html">NSWHealthiTOCMedicationStatement</a> resources.
 <br /><br /></li>
 </ul>
 
 <h2 id="medication-history">Medication History</h2>
+
+<p>The medication list bundle can be retrieved using the <a href="StructureDefinition-medhistory-lookup.html">$medhistory-lookup</a> operation.
+<br /><br /></p>
 
 <p>The following diagram shows the logical model for Medication History:</p>
 
@@ -172,11 +178,11 @@
 <ul>
   <li>Medication histories should be sent as a Bundle with type=”message”.</li>
   <li>All resources should be included directly as root level entries in the bundle, with appropriate id references between resources.  Where URL locators are not available, uuids should be used.</li>
-  <li>The medication history bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource as its first entry.</li>
-  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource should have a fixed event code of “medication-history”.</li>
-  <li>The medication history bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">nswhealthitocpatient</a> resource.</li>
+  <li>The medication history bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource as its first entry.</li>
+  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource should have a fixed event code of “medication-history”.</li>
+  <li>The medication history bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">NSWHealthiTOCPatient</a> resource.</li>
   <li>The medication history bundle must contain a single List resource which provides an order for the MedicationStatements in the bundle. Target systems may process this List if they are capable of doing so.</li>
-  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationstatement.html">nswhealthitocmedicationstatement</a> resources.
+  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationstatement.html">NSWHealthiTOCMedicationStatement</a> resources.
 <br /><br /></li>
 </ul>
 
@@ -186,6 +192,9 @@
 <br /><br /></p>
 
 <h2 id="medication-administration-record">Medication Administration Record</h2>
+
+<p>The medication list bundle can be retrieved using the <a href="StructureDefinition-medhistory-lookup.html">$mar-lookup</a> operation.
+<br /><br /></p>
 
 <p>The following diagram shows the logical model for Medication Administration Record:</p>
 
@@ -197,11 +206,11 @@
 <ul>
   <li>Medication administration records should be sent as a Bundle with type=”message”.</li>
   <li>All resources should be included directly as root level entries in the bundle, with appropriate id references between resources.  Where URL locators are not available, uuids should be used.</li>
-  <li>The medication administration record bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource as its first entry.</li>
-  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">nswhealthitocmessageheader</a> resource should have a fixed event code of “medication-administration-record”.</li>
-  <li>The medication administration record bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">nswhealthitocpatient</a> resource.</li>
+  <li>The medication administration record bundle must contain a single <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource as its first entry.</li>
+  <li>The <a href="StructureDefinition-nswhealthitocmessageheader.html">NSWHealthiTOCMessageHeader</a> resource should have a fixed event code of “medication-administration-record”.</li>
+  <li>The medication administration record bundle must contain a single <a href="StructureDefinition-nswhealthitocpatient.html">NSWHealthiTOCPatient</a> resource.</li>
   <li>The medication administration record bundle must contain a single List resource which provides an order for the MedicationAdministrations in the bundle. Target systems may process this List if they are capable of doing so.</li>
-  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationadministration.html">nswhealthitocmedicationadministration</a> resources.
+  <li>The medication list bundle must provide zero or more <a href="StructureDefinition-nswhealthitocmedicationadministration.html">NSWHealthiTOCMedicationAdministration</a> resources.
 <br /><br /></li>
 </ul>
 
@@ -231,7 +240,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Nov 25, 2019 12:44+1100. |
+        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Thu, Nov 28, 2019 09:59+1100. |
              <!--  <a style="color: #81BEF7" rel="license" <!-- <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

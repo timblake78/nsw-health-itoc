@@ -34,6 +34,10 @@ To that end it specifies key entities and elements thereof needed for sending me
 FHIR<sup>&reg;&copy;</sup> connectathon events are an important part of the verification of this guide as being suitable for implementation. This implementation guide may be used as the basis for Australian connectathon events.
 <br/><br/>
 
+## Test Server
+A test server for this project, hosting the various examples, is currently hosted <a href="http://semanticconsulting.com.au:8080/hapi-fhir-jpaserver/">here</a>
+<br/><br/>
+
 ## Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
