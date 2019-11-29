@@ -31,10 +31,10 @@
         ],
         "text": "Local Prescription Number"
       },
-      "system": "http://ns.electronichealth.net.au/id/hpio-scoped/prescription/1.0/8003627500000328",
+      "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid",
       "value": "53720010",
       "assigner": {
-        "display": "Downunder Hospital"
+        "display": "NSW Health"
       }
     }
   ],

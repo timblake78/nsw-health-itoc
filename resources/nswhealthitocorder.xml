@@ -27,15 +27,21 @@
       <short value="The practioner who requested the prescription." />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.dosageInstruction.additionalInstruction">
-      <path value="MedicationRequest.dosageInstruction.additionalInstruction" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
+	<element id="MedicationRequest.identifier:localScriptNumber">
+		<path value="MedicationRequest.identifier"/>
+		<sliceName value="localScriptNumber"/>
+		<min value="1"/>
+	</element>
+	<element id="MedicationRequest.identifier:localScriptNumber.system">
+		<path value="MedicationRequest.identifier.system"/>
+		<fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid"/>
+	</element>
+	<element id="MedicationRequest.identifier:localScriptNumber.assigner.display">
+		<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+			<valueBoolean value="true"/>
+		</extension>
+		<path value="MedicationRequest.identifier.assigner.display"/>
+		<fixedString value="NSW Health"/>
+	</element>	
   </differential>
 </StructureDefinition>

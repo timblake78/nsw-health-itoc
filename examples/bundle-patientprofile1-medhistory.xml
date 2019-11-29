@@ -13,13 +13,16 @@
 			<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"/>
 		  </meta>  
 		   <eventCoding>
-			  <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+			  <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"/>
 			  <code value="medication-history"/>
 		   </eventCoding>
 		   <source>
 			  <name value="GH"/>
 			  <endpoint value="http://cerner.com" />
 		   </source>
+		   <focus> 
+			  <reference value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/> 
+		   </focus> 		   
 		</MessageHeader>
     </resource>
   </entry>

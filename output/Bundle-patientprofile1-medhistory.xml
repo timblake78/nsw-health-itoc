@@ -12,16 +12,19 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: medication-history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes code medication-history = 'medication-history', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href="http://cerner.com">http://cerner.com</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-history = 'This message is a medication history', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href="http://cerner.com">http://cerner.com</a></td></tr></table><p><b>focus</b>: <a href="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308">urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308</a></p></div>
         </text>
         <eventCoding>
-          <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+          <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"/>
           <code value="medication-history"/>
         </eventCoding>
         <source>
           <name value="GH"/>
           <endpoint value="http://cerner.com"/>
         </source>
+        <focus>
+          <reference value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/>
+        </focus>
       </MessageHeader>
     </resource>
   </entry>

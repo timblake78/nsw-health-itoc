@@ -52,7 +52,7 @@
       <short value="The patient who received the medication." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient" />
       </type>
     </element>
     <element id="MedicationAdministration.performer">
@@ -60,25 +60,48 @@
       <short value="The practioner(s) who performed the administration." />
       <min value="1" />
     </element>
+    <element id="MedicationAdministration.request">
+      <path value="MedicationAdministration.request" />
+      <short value="The order relating to this medication administration." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder" />
+      </type>	  
+    </element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationAdministration.medication[x].coding"/>
 		<sliceName value="cerner"/>
+		<min value="0"/>
 		<max value="1"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner.system">
 		<path value="MedicationAdministration.medication[x].coding.system"/>
 		<min value="1"/>
+		<max value="1"/>
 		<fixedUri value="http://cerner.com/itoc/codes"/>
+	</element>
+	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner.code">
+		<path value="MedicationStatement.medication[x].coding.code"/>
+		<min value="1"/>
+		<max value="1"/>
 	</element>	
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft">
 		<path value="MedicationAdministration.medication[x].coding"/>
 		<sliceName value="imdsoft"/>
+		<min value="1"/>
 		<max value="1"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft.system">
 		<path value="MedicationAdministration.medication[x].coding.system"/>
 		<min value="1"/>
+		<max value="1"/>
 		<fixedUri value="http://www.imd-soft.com/itoc/codes"/>
+	</element>
+	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft.code">
+		<path value="MedicationStatement.medication[x].coding.code"/>
+		<min value="1"/>
+		<max value="1"/>
 	</element>	
   </differential>
 </StructureDefinition>
