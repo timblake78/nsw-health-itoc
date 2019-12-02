@@ -123,7 +123,7 @@
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>NSWHealthiTOCMedicationAdministration</b></td></tr>
- <tr><td>MedicationAdministration</td><td>Entity. Role, or Act</td> </tr>
+ <tr><td>MedicationAdministration</td><td>Entity. Role, or Act, SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
@@ -222,7 +222,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationCodeableConcept)</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationReference)</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>FiveWs.done[x]</td> </tr>
@@ -317,7 +317,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Thu, Nov 28, 2019 09:59+1100. |
+        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Dec 3, 2019 09:29+1100. |
              <!--  <a style="color: #81BEF7" rel="license" <!-- <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

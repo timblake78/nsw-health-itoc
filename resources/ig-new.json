@@ -3,15 +3,15 @@
   "id" : "nswhealth-itoc",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\resources"
+    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\examples"
+    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\pages"
+    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\pages"
   }],
   "url" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc",
   "version" : "1.0.0",

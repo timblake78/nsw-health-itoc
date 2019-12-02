@@ -16,7 +16,7 @@
 	
   <compose>
      <include>
-      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes"/>
+      <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"/>
     </include>
    
   </compose>

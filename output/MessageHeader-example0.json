@@ -8,10 +8,10 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: medication-history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes code medication-history = 'medication-history', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href=\"http://cerner.com\">http://cerner.com</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-history = 'This message is a medication history', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href=\"http://cerner.com\">http://cerner.com</a></td></tr></table></div>"
   },
   "eventCoding": {
-    "system": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetypes",
+    "system": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype",
     "code": "medication-history"
   },
   "source": {
