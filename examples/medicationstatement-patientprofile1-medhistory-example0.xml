@@ -13,6 +13,11 @@
 	   <valueString value="Amlodipine"/>
 	</extension> 
 	
+    <basedOn>
+        <reference value="MedicationRequest/example0"/>
+        <display value="Supporting Medication Order"/>
+    </basedOn>	
+	
 	<status value="active"/>     
     
 	<category>
@@ -23,22 +28,10 @@
 	   </coding>
 	</category>
 
-	<medicationCodeableConcept>
-		<coding>
-		  <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
-			<valueCoding>
-			  <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
-			  <code value="UPDSF"/>
-			  <display value="Unbranded product with strengths and form"/>
-			</valueCoding>
-		  </extension>
-		  <system value="http://snomed.info/sct"/>
-		  <code value="23519011000036101"/>
-		  <display value="amlodipine 10 mg tablet (medicinal product unit of use)"/>
-		</coding>
-		<text value="Amlodipine 10 mg Tablet"/>		
-	</medicationCodeableConcept>
-	
+	<medicationReference>
+		<reference value="Medication/example0"/>
+	</medicationReference>
+		
     <subject>
         <reference value="Patient/example0"/>
         <display value="Stella Franklin"/>

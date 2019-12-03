@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "messagetype",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Header Type</h2><div><p>Message Header Types for Integrated Transitions of Care (iTOC) Messages</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.2.3.4.2.2.16"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "MessageHeaderType",
+  "title": "Message Header Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-11-22T00:00:00+11:00",
+  "publisher": "NSW eHealth",
+  "description": "Message Header Types for Integrated Transitions of Care (iTOC) Messages",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"
+      }
+    ]
+  }
+}

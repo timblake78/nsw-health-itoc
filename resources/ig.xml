@@ -293,7 +293,15 @@
       <name value="Medication example including Cerner and IMDsoft medication codings"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
-    </resource>	
+    </resource>
+	<resource>
+      <reference>
+        <reference value="Medication/example2"/>
+      </reference>
+      <name value="Salbutamol example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>		
 	
     <page>
       <nameUrl value="index.html"/>

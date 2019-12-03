@@ -5,6 +5,8 @@ A medication for use in a NSW Health context.
 
 **Examples**
 
-[Basic Medication](Medication-example0.html)
+[Amlodipine 10mg Tablet (MPUU)](Medication-example0.html)
+
+[Salbutamol 200 microgram powder for inhalation, 200 microgram unit dose](Medication-example2.html)
 
 [Medication including Cerner and IMDsoft codes](Medication-example1.html)

@@ -3,15 +3,15 @@
   "id" : "nswhealth-itoc",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\resources"
+    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\examples"
+    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "D:\\Users\\tblake\\Documents\\fhir\\nsw-health-itoc\\pages"
+    "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-fhir-itoc\\pages"
   }],
   "url" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc",
   "version" : "1.0.0",
@@ -308,6 +308,14 @@
         "reference" : "Medication/example1"
       },
       "name" : "Medication example including Cerner and IMDsoft medication codings",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Medication/example2"
+      },
+      "name" : "Salbutamol example",
       "exampleBoolean" : true,
       "groupingId" : "p1"
     }],

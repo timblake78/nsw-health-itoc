@@ -69,39 +69,41 @@
         <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder" />
       </type>	  
     </element>
+	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept">
+		<path value="MedicationAdministration.medication[x]"/>
+		<sliceName value="medicationCodeableConcept"/>
+	</element>	
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationAdministration.medication[x].coding"/>
 		<sliceName value="cerner"/>
+		<short value="A cerner code"/>	
 		<min value="0"/>
 		<max value="1"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner.system">
 		<path value="MedicationAdministration.medication[x].coding.system"/>
 		<min value="1"/>
-		<max value="1"/>
 		<fixedUri value="http://cerner.com/itoc/codes"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner.code">
 		<path value="MedicationAdministration.medication[x].coding.code"/>
 		<min value="1"/>
-		<max value="1"/>
 	</element>	
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft">
 		<path value="MedicationAdministration.medication[x].coding"/>
 		<sliceName value="imdsoft"/>
-		<min value="1"/>
+		<short value="A MetaVision code"/>			
+		<min value="0"/>
 		<max value="1"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft.system">
 		<path value="MedicationAdministration.medication[x].coding.system"/>
 		<min value="1"/>
-		<max value="1"/>
 		<fixedUri value="http://www.imd-soft.com/itoc/codes"/>
 	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft.code">
 		<path value="MedicationAdministration.medication[x].coding.code"/>
 		<min value="1"/>
-		<max value="1"/>
 	</element>	
   </differential>
 </StructureDefinition>

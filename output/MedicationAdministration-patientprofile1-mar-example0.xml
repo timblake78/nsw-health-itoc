@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="patientprofile1-mar-example0"/>
+  <meta>
+    <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-mar-example0</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>category</b>: inpatient <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = '23519011000036101', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="Patient-example0.html">Stella Franklin. Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, medicalRecordNumber = 123456789, auID = 123456789; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p><p><b>effective</b>: 15/05/2018 6:00:00 PM</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href="Practitioner-example1.html">Joyce Smith (Registered Nurse). Generated Summary: id: example1; StaffLink Number = 8234234234; active; Joyce Smith ; joyce.smith@downunderhospital.com.au(WORK)</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: Witness <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/med-admin-perform-function code 'witness' = 'Witness', given as 'Witness'})</span></p><p><b>actor</b>: <a href="Practitioner-example2.html">Kerry Jones (Registered Nurse). Generated Summary: id: example2; StaffLink Number = 8234234234; active; Kerry Jones ; kerry.jones@downunderhospital.com.au(WORK)</a></p></blockquote><p><b>request</b>: <a href="MedicationRequest-example0.html">Supporting Medication Order. Generated Summary: id: example0; Local Prescription Number = 53720010; status: active; intent: order; <span title="Codes: {http://snomed.info/sct 23519011000036101}">Amlodipine 10 mg Tablet</span>; authoredOn: 14/06/2018 12:00:00 AM; <span title="Codes: {http://snomed.info/sct 38341003}">Hypertensive disorder, systemic arterial</span>; </a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td>*</td><td>Oral <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '26643006' = 'Oral route', given as 'Oral use'})</span></td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <text value="inpatient"/>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+        <valueCoding>
+          <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+          <code value="UPDSF"/>
+          <display value="Unbranded product with strengths and form"/>
+        </valueCoding>
+      </extension>
+      <system value="http://snomed.info/sct"/>
+      <code value="23519011000036101"/>
+      <display value="amlodipine 10 mg tablet"/>
+    </coding>
+    <text value="Amlodipine 10 mg Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/example0"/>
+    <display value="Stella Franklin"/>
+  </subject>
+  <effectiveDateTime value="2018-05-15T08:00:00.000+00:00"/>
+  <performer>
+    <actor>
+      <reference value="Practitioner/example1"/>
+      <display value="Joyce Smith (Registered Nurse)"/>
+    </actor>
+  </performer>
+  <performer>
+    <function>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/med-admin-perform-function"/>
+        <code value="witness"/>
+        <display value="Witness"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="Practitioner/example2"/>
+      <display value="Kerry Jones (Registered Nurse)"/>
+    </actor>
+  </performer>
+  <request>
+    <reference value="MedicationRequest/example0"/>
+    <display value="Supporting Medication Order"/>
+  </request>
+  <dosage>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral use"/>
+      </coding>
+      <text value="Oral"/>
+    </route>
+    <dose>
+      <value value="10"/>
+      <unit value="mg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>
