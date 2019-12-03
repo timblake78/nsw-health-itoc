@@ -3,7 +3,7 @@
   "id": "example1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>code</b>: pantoprazole <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '21563011000036107' = '21563011000036107', given as 'pantoprazole'}; {http://www.imd-soft.com/itoc/codes code '13614' = '13614', given as 'pantoprazole'}; {http://cerner.com/itoc/codes code 'MUL.ORD-SYN!12418' = 'MUL.ORD-SYN!12418', given as 'pantoprazole'})</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>code</b>: pantoprazole <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '21563011000036107' = 'pantoprazole', given as 'pantoprazole'}; {http://www.imd-soft.com/itoc/codes code '13614' = '13614', given as 'pantoprazole'}; {http://cerner.com/itoc/codes code 'MUL.ORD-SYN!12418' = 'MUL.ORD-SYN!12418', given as 'pantoprazole'})</span></p></div>"
   },
   "extension": [
     {
