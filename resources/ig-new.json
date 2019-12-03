@@ -30,7 +30,7 @@
       "code" : "AU"
     }]
   }],
-  "packageId" : "nsw.health.fhir.itoc",
+  "packageId" : "nsw.health.fhir.toc",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1",
   "4.0.1"],

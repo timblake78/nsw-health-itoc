@@ -28,6 +28,10 @@
 		<min value="1"/>
 		<fixedUri value="http://cerner.com/itoc/codes"/>
 	</element>
+	<element id="Medication.code.coding:cerner.code">
+		<path value="Medication.code.coding.code"/>
+		<min value="1"/>
+	</element>		
 	<element id="Medication.code.coding:imdsoft">
 		<path value="Medication.code.coding"/>
 		<sliceName value="imdsoft"/>
@@ -38,5 +42,9 @@
 		<min value="1"/>
 		<fixedUri value="http://www.imd-soft.com/itoc/codes"/>
 	</element>
+	<element id="Medication.code.coding:imdsoft.code">
+		<path value="Medication.code.coding.code"/>
+		<min value="1"/>
+	</element>	
   </differential>
 </StructureDefinition>

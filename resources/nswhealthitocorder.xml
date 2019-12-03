@@ -36,6 +36,10 @@
 		<path value="MedicationRequest.identifier.system"/>
 		<fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid"/>
 	</element>
+	<element id="MedicationRequest.identifier:localScriptNumber.value">
+		<path value="MedicationRequest.identifier.value"/>
+		<min value="1"/>
+	</element>
 	<element id="MedicationRequest.identifier:localScriptNumber.assigner.display">
 		<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
 			<valueBoolean value="true"/>

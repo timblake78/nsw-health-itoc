@@ -28,7 +28,7 @@
       <code value="AU"/>
     </coding>
   </jurisdiction>
-  <packageId value="nsw.health.fhir.itoc"/>
+  <packageId value="nsw.health.fhir.toc"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>

@@ -119,7 +119,7 @@
         "qa": "qa",
         "specification": "http://hl7.org/fhir/R4/"
     },
-    "npm-name": "nsw.health.fhir.itoc",
+    "npm-name": "nsw.health.fhir.toc",
     "resources": {
 
         "StructureDefinition/nswhealthitocmessageheader": {
