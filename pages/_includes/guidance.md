@@ -50,12 +50,13 @@ The following diagram shows the logical model for Medication List:
 * The [NSWHealthiTOCMessageHeader](StructureDefinition-nswhealthitocmessageheader.html) resource should have a fixed event code of "medication-list".
 * The medication list bundle must contain a single [NSWHealthiTOCPatient](StructureDefinition-nswhealthitocpatient.html) resource.
 * The medication list bundle must contain a single List resource which provides an order for the MedicationStatements in the bundle. Target systems may process this List if they are capable of doing so.
+* [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources must reference the relevant [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) through the basedOn attribute.
 * The medication list bundle must provide zero or more [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources.
 <br/><br/>
 
 ## Medication History
 
-The medication list bundle can be retrieved using the [$medhistory-lookup](StructureDefinition-medhistory-lookup.html) operation.
+The medication history bundle can be retrieved using the [$medhistory-lookup](StructureDefinition-medhistory-lookup.html) operation.
 <br/><br/>
 
 The following diagram shows the logical model for Medication History:
@@ -81,7 +82,7 @@ The following diagram shows the logical model for Medication History:
 
 ## Medication Administration Record
 
-The medication list bundle can be retrieved using the [$mar-lookup](StructureDefinition-medhistory-lookup.html) operation.
+The medication administration record bundle can be retrieved using the [$mar-lookup](StructureDefinition-medhistory-lookup.html) operation.
 <br/><br/>
 
 The following diagram shows the logical model for Medication Administration Record:

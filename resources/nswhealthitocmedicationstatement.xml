@@ -39,6 +39,13 @@
         <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent" />
       </type>
     </element>
+	<element id="MedicationStatement.basedOn">
+		<path value="MedicationStatement.basedOn"/>
+        <type>
+          <code value="Reference"/>
+          <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
+        </type>
+	</element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <short value="The type of medication usage. For Medication List use case use &quot;inpatient&quot;.  For Medication History use case use &quot;patientspecified&quot;." />
@@ -51,7 +58,7 @@
       <definition value="The person who is/was taking the medication." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient" />
       </type>
     </element>
 	<element id="MedicationStatement.medication[x]:medicationReference">
@@ -61,7 +68,7 @@
           <code value="Reference"/>
           <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication"/>
         </type>
-	</element>	
+	</element>
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="cerner"/>

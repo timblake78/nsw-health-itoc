@@ -12,4 +12,7 @@
       <name value="GH"/>
 	  <endpoint value="http://cerner.com" />
    </source>
+   <focus> 
+	  <reference value="Patient/example0"/> 
+   </focus> 	   
 </MessageHeader>

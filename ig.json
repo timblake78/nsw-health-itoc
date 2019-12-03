@@ -150,9 +150,9 @@
             "base": "StructureDefinition-nswhealthitocmedicationadministration.html",
             "defns": "StructureDefinition-nswhealthitocmedicationadministration-definitions.html"
         },		
-        "StructureDefinition/nswhealthitocprescription": {
+        "StructureDefinition/nswhealthitocorder": {
             "base": "StructureDefinition-nswhealthitocorder.html",
-            "defns": "StructureDefinition-nswhealthitocprescription-definitions.html"
+            "defns": "StructureDefinition-nswhealthitocorder-definitions.html"
         },		
         "StructureDefinition/nswhealthitocdosage": {
             "base": "StructureDefinition-nswhealthitocdosage.html",

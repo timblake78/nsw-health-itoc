@@ -57,7 +57,6 @@
       <path value="Patient.identifier" />
       <sliceName value="auID" />
       <short value="An auID for this patient, as per HIRD: 004 Area Unique Patient Identifier" />
-      <min value="1" />
     </element>
     <element id="Patient.identifier:auID.system">
       <path value="Patient.identifier.system" />

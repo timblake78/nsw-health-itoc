@@ -465,7 +465,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Patient.identifier.assigner.display","","","",1,1,"","","Y","string {[]} {[]}
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Patient.identifier","auID","","",1,*,"","","Y","Identifier {[]} {[]}
+"Patient.identifier","auID","","",0,*,"","","Y","Identifier {[]} {[]}
 ","An auID for this patient, as per HIRD: 004 Area Unique Patient Identifier","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}

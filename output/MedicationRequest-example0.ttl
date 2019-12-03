@@ -39,10 +39,10 @@
        ];
        fhir:CodeableConcept.text [ fhir:value "Local Prescription Number" ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/prescription/1.0/8003627500000328" ];
+     fhir:Identifier.system [ fhir:value "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid" ];
      fhir:Identifier.value [ fhir:value "53720010" ];
      fhir:Identifier.assigner [
-       fhir:Reference.display [ fhir:value "Downunder Hospital" ]
+       fhir:Reference.display [ fhir:value "NSW Health" ]
      ]
   ];
   fhir:MedicationRequest.status [ fhir:value "active"];
