@@ -530,6 +530,20 @@
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-example0.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/example0"/>
+      </reference>
+      <name value="NSW Health example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="NSW Health Integrated Transitions of Care (iTOC) Implementation Guide"/>

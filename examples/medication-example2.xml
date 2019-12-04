@@ -21,9 +21,9 @@
 		  </extension>
 		  <system value="http://snomed.info/sct"/>
 		  <code value="45078011000036105"/>
-		  <display value="salbutamol 200 microgram powder for inhalation, 200 microgram unit dose"/>
+		  <display value="salbutamol 200 microgram powder for inhalation, unit dose"/>
 		</coding>
-		<text value="Salbutamol 200 microgram powder for inhalation, 200 microgram unit dose"/>
+		<text value="Salbutamol 200 microgram powder for inhalation, unit dose"/>
 	</code>
 	
 	<form>

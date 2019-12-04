@@ -88,7 +88,7 @@
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:cerner.code">
 		<path value="MedicationAdministration.medication[x].coding.code"/>
 		<min value="1"/>
-	</element>	
+	</element>
 	<element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding:imdsoft">
 		<path value="MedicationAdministration.medication[x].coding"/>
 		<sliceName value="imdsoft"/>

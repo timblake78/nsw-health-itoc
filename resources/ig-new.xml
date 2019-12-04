@@ -315,6 +315,14 @@
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/example0"/>
+      </reference>
+      <name value="NSW Health example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="NSW Health Integrated Transitions of Care (iTOC) Implementation Guide"/>

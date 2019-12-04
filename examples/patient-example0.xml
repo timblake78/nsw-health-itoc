@@ -64,10 +64,18 @@
 	
 	<identifier>
 	  <type>
-	      <text value="medicalRecordNumber"/>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="MR"/>
+				<display value="Medical record number"/>
+			</coding>	  
+	      <text value="Medical Record Number"/>
       </type>
       <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/mrn/1.0"/>
 	  <value value="123456789"/>
+	  <assigner>
+		<reference value="Organization/example0"/>
+	  </assigner>
 	</identifier>	
 	
   	<identifier>

@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "example0"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>code</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet (medicinal product unit of use)'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>code</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -37,7 +37,7 @@
        ];
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "23519011000036101" ];
-       fhir:Coding.display [ fhir:value "amlodipine 10 mg tablet (medicinal product unit of use)" ]
+       fhir:Coding.display [ fhir:value "amlodipine 10 mg tablet" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Amlodipine 10 mg Tablet" ]
   ];

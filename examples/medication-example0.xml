@@ -21,7 +21,7 @@
 		  </extension>
 		  <system value="http://snomed.info/sct"/>
 		  <code value="23519011000036101"/>
-		  <display value="amlodipine 10 mg tablet (medicinal product unit of use)"/>
+		  <display value="amlodipine 10 mg tablet"/>
 		</coding>
 		<text value="Amlodipine 10 mg Tablet"/>
 	</code>

@@ -48,6 +48,12 @@
   ], [
      fhir:index 2;
      fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org.au/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "DN" ];
+         fhir:Coding.display [ fhir:value "Doctor number" ]
+       ];
        fhir:CodeableConcept.text [ fhir:value "StaffLink Number" ]
      ];
      fhir:Identifier.system [ fhir:value "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/stafflinkid/1.0" ];

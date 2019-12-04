@@ -691,6 +691,24 @@
         "name": "Salbutamol example",
         "exampleBoolean": true,
         "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-example0.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/example0"
+        },
+        "name": "NSW Health example",
+        "exampleBoolean": true,
+        "groupingId": "p1"
       }
     ],
     "page": {

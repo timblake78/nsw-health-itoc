@@ -14,3 +14,4 @@ manual-fix/pd-from/
 .vs/VSWorkspaceState.json
 .vs/slnx.sqlite
 .vs/slnx.sqlite-journal
+/resources/au-fhir-base/

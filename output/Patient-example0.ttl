@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, medicalRecordNumber = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -85,10 +85,20 @@
   ], [
      fhir:index 2;
      fhir:Identifier.type [
-       fhir:CodeableConcept.text [ fhir:value "medicalRecordNumber" ]
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ];
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Medical Record Number" ]
      ];
      fhir:Identifier.system [ fhir:value "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/mrn/1.0" ];
-     fhir:Identifier.value [ fhir:value "123456789" ]
+     fhir:Identifier.value [ fhir:value "123456789" ];
+     fhir:Identifier.assigner [
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/Organization/example0>;
+       fhir:Reference.reference [ fhir:value "Organization/example0" ]
+     ]
   ], [
      fhir:index 3;
      fhir:Identifier.type [
