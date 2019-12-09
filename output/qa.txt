@@ -3,7 +3,7 @@
 
 err = 4, warn = 66, info = 2
 IG Publisher Version: v1.0.15-SNAPSHOT
-Generated Mon Dec 09 11:32:27 AEDT 2019. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+Generated Mon Dec 09 12:59:36 AEDT 2019. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory : 0 / 17

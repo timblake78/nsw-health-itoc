@@ -24,6 +24,15 @@ This implementation guide supports the following scope:
 * **Medication Administration Record** - Provides the record of the medications administered including all active scheduled, unscheduled, PRN and continuous infusions for a specific patient.
 <br/><br/>
 
+## Todo / Known Issues
+The following items remain outstanding in order to complete this Implementation Guide:
+
+* Value Set bindings (once these have been defined in OntoServer)
+* Finalising of various namespace URIs
+* Addition of further examples
+* MRN (and other identifier) validation / constraints
+<br/><br/>
+
 ## Usage
 
 This document is a working specification that may be directly implemented by system vendors with the capability to produce and consume FHIR<sup>&reg;&copy;</sup>.
