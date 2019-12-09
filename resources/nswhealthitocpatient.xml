@@ -40,6 +40,7 @@
     <element id="Patient.identifier:medicalRecordNumber">
       <path value="Patient.identifier" />
       <sliceName value="medicalRecordNumber" />
+	  <short value="An MRN identifier for this patient" />
       <alias value="mrn" />
     </element>
     <element id="Patient.identifier:medicalRecordNumber.system">
@@ -50,6 +51,7 @@
     </element>
     <element id="Patient.identifier:medicalRecordNumber.value">
       <path value="Patient.identifier.value" />
+	  <short value="The MRN identifier value" />  
       <min value="1" />
       <mustSupport value="true"/>	  
     </element>
@@ -65,6 +67,7 @@
     </element>
     <element id="Patient.identifier:auID.value">
       <path value="Patient.identifier.value" />
+	  <short value="The auID identifier value" />  	  
       <min value="1" />
     </element>
     <element id="Patient.identifier:euID">
@@ -80,10 +83,12 @@
     </element>
     <element id="Patient.identifier:euID.value">
       <path value="Patient.identifier.value" />
+	  <short value="The euID identifier value" />   
       <min value="1" />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
+	  <short value="One or more names for the patient." />   
       <min value="1" />
       <mustSupport value="true"/>	  
     </element>

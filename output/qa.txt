@@ -1,12 +1,12 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 4, warn = 70, info = 4
-IG Publisher Version: v1.0.8-SNAPSHOT
-Generated Wed Dec 04 15:49:25 AEDT 2019. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+err = 4, warn = 66, info = 2
+IG Publisher Version: v1.0.15-SNAPSHOT
+Generated Mon Dec 09 11:32:27 AEDT 2019. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 0 / 1
- C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory : 0 / 20
+ C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory : 0 / 17
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\encounter-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\list-medhistory-list-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\medication-example0 : 0 / 0
@@ -49,18 +49,15 @@ Generated Wed Dec 04 15:49:25 AEDT 2019. FHIR version 4.0.1 for nsw.health.fhir.
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be nsw.health.fhir.toc
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory.xml ==
-INFORMATION: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[2]: This element does not match any known slice for the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.extension[0].value.ofType(Coding): ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.extension[1].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[0].extension[0].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[0].extension[1].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator
-WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[2].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[3].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.extension[0].value.ofType(Coding): ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.extension[1].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[0].extension[0].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[0].extension[1].value.ofType(Coding): ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator
-WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[2].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[3].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[3].resource.medication.ofType(CodeableConcept).coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[3].resource.reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator

@@ -44,7 +44,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, medicalRecordNumber = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>"
         },
         "extension": [
           {
@@ -116,10 +116,20 @@
           },
           {
             "type": {
-              "text": "medicalRecordNumber"
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical Record Number"
             },
             "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/mrn/1.0",
-            "value": "123456789"
+            "value": "123456789",
+            "assigner": {
+              "reference": "Organization/example0"
+            }
           },
           {
             "type": {
@@ -167,7 +177,7 @@
         "id": "medhistory-list-example0",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medhistory-list-example0</p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Current Medicine <span style=\"background: LightGoldenRodYellow\">(Details : {https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1 code '101.32009' = '101.32009', given as 'Current Medicine'})</span></p><p><b>subject</b>: <a href=\"urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308\">urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308</a></p><p><b>date</b>: 29/10/2019 12:00:00 AM</p><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe\">urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"urn:uuid:7201b613-378e-4454-a0ff-b3701fdf9230\">urn:uuid:7201b613-378e-4454-a0ff-b3701fdf9230</a></p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medhistory-list-example0</p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Current Medicine <span style=\"background: LightGoldenRodYellow\">(Details : {https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1 code '101.32009' = 'Current Medicine', given as 'Current Medicine'})</span></p><p><b>subject</b>: <a href=\"urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308\">urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308</a></p><p><b>date</b>: 29/10/2019 12:00:00 AM</p><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe\">urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"urn:uuid:7201b613-378e-4454-a0ff-b3701fdf9230\">urn:uuid:7201b613-378e-4454-a0ff-b3701fdf9230</a></p></blockquote></div>"
         },
         "status": "current",
         "mode": "snapshot",
@@ -210,7 +220,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example0</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308\">Stella Franklin</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a\">Doctor Mayo</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>note</b>: The patient is not sure when exactly started taking the medication but is certain it's been over a year</p><p><b>dosage</b>: </p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example0</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308\">Stella Franklin</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a\">Doctor Mayo</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertension', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>note</b>: The patient is not sure when exactly started taking the medication but is certain it's been over a year</p><p><b>dosage</b>: </p></div>"
         },
         "extension": [
           {
@@ -423,7 +433,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932945</td><td>General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932945</td><td>General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = 'General  Practitioner', given as 'General Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
         },
         "identifier": [
           {

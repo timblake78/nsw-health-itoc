@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 2, warn = 35, info = 2 -->
+<!-- broken links = 1, errors = 2, warn = 33, info = 1 -->
 <head>
   <title>NSWHealthTOCImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NSWHealthTOCImplementationGuide</h1>
- <p>Generated Wed Dec 04 15:49:25 AEDT 2019, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.8-SNAPSHOT</p>
+ <p>Generated Mon Dec 09 11:32:27 AEDT 2019, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.15-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -20,7 +20,7 @@
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-fhir-itoc_examples_bundle-patientprofile1-medhistory"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory</b></a></td><td><b>0</b></td><td><b>20</b></td>
+     <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-fhir-itoc_examples_bundle-patientprofile1-medhistory"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory</b></a></td><td><b>0</b></td><td><b>17</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-fhir-itoc_examples_encounter-example0"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\encounter-example0</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -152,9 +152,6 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[2]</b></td><td><b>information</b></td><td><b>This element does not match any known slice for the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.extension[0].value.ofType(Coding)</b></td><td><b>warning</b></td><td><b>ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator</b></td>
    </tr>
@@ -166,9 +163,6 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[0].extension[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[2].type</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.identifier[3].type</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
@@ -184,9 +178,6 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[0].extension[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[2].type</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[2].resource.subject.resource.identifier[3].type</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>

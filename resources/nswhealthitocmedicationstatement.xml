@@ -49,7 +49,7 @@
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="cerner"/>
-		<short value="A cerner code"/>			
+		<short value="The cerner (MULTUM) code for the medication"/>			
 		<max value="1"/>
 	</element>
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner.system">
@@ -59,12 +59,13 @@
 	</element>
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner.code">
 		<path value="MedicationStatement.medication[x].coding.code"/>
+		<short value="Cerner (MULTUM) code value" />		
 		<min value="1"/>
 	</element>		
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:imdsoft">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="imdsoft"/>
-		<short value="A MetaVision code"/>			
+		<short value="The MetaVision / IMDsoft code for the medication"/>			
 		<max value="1"/>
 	</element>
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:imdsoft.system">
@@ -74,11 +75,13 @@
 	</element>
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:imdsoft.code">
 		<path value="MedicationStatement.medication[x].coding.code"/>
+		<short value="MetaVision / IMDsoft code value" />		
 		<min value="1"/>
 	</element>
 	<element id="MedicationStatement.medication[x]:medicationReference">
 		<path value="MedicationStatement.medicationReference"/>
 		<sliceName value="medicationReference"/>
+		<short value="A reference to a NSW Health iTOC Medication" />
         <type>
           <code value="Reference"/>
           <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication"/>

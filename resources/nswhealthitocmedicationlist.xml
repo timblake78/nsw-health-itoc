@@ -45,6 +45,7 @@
 
     <element id="List.date">
 	   <path value="List.date"/>
+	   <short value="The date on which the list was created." />
        <mustSupport value="true"/>	  
     </element>
 
@@ -55,6 +56,7 @@
 	
     <element id="List.entry.item">
       <path value="List.entry.item"/>
+	  <short value="A reference to a NSW Health Medication Statement or NSW Health Medication Administration" />	  
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -67,6 +69,7 @@
 	
     <element id="List.emptyReason">
 	   <path value="List.emptyReason"/>
+	   <short value="The reason why the list is empty." />
        <mustSupport value="true"/>	  
     </element>
 	

@@ -21,6 +21,7 @@
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
       <min value="1" />
+	  <fixedCode value="active"/>
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
@@ -53,6 +54,7 @@
 	</element>
 	<element id="MedicationRequest.identifier:localScriptNumber.value">
 		<path value="MedicationRequest.identifier.value"/>
+		<short value="The Order ID value" />
 		<min value="1"/>
 	</element>
 	<element id="MedicationRequest.identifier:localScriptNumber.assigner">
