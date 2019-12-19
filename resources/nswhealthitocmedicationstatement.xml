@@ -107,6 +107,16 @@
         <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient" />
       </type>
     </element>
-	
+    <element id="MedicationStatement.extension:renderedDosageInstruction">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="renderedDosageInstruction" />
+      <short value="A textual description of the dosage" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction" />
+      </type>
+    </element>	
   </differential>
 </StructureDefinition>

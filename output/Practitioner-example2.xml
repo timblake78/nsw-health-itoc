@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="example2"/>
+  <meta>
+    <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example2</p><p><b>meta</b>: </p><p><b>identifier</b>: StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Kerry Jones </p><p><b>telecom</b>: kerry.jones@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932901</td><td>Registered Nurse <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '254415' = '254415', given as 'Registered Nurse'})</span></td><td>AHPRA</td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <text value="StaffLink Number"/>
+    </type>
+    <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/stafflinkid/1.0"/>
+    <value value="8234234234"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Jones"/>
+    <given value="Kerry"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="kerry.jones@downunderhospital.com.au"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <line value="3 McGregor Street"/>
+    <city value="Blacktown"/>
+    <state value="NSW"/>
+    <postalCode value="2148"/>
+    <country value="Australia"/>
+  </address>
+  <qualification>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+          <code value="AHPRA"/>
+          <display value="Australian Health Practitioner Regulation Agency Registration Number"/>
+        </coding>
+        <text value="AHPRA Registration Number"/>
+      </type>
+      <system value="http://hl7.org.au/id/ahpra-registration-number"/>
+      <value value="MED0000932901"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+        <code value="254415"/>
+        <display value="Registered Nurse"/>
+      </coding>
+      <text value="Registered Nurse"/>
+    </code>
+    <issuer>
+      <display value="AHPRA"/>
+    </issuer>
+  </qualification>
+</Practitioner>

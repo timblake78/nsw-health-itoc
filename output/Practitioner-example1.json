@@ -1,0 +1,83 @@
+{
+  "resourceType": "Practitioner",
+  "id": "example1",
+  "meta": {
+    "profile": [
+      "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>meta</b>: </p><p><b>identifier</b>: StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Joyce Smith </p><p><b>telecom</b>: joyce.smith@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932911</td><td>Registered Nurse <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '254415' = '254415', given as 'Registered Nurse'})</span></td><td>AHPRA</td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "text": "StaffLink Number"
+      },
+      "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/stafflinkid/1.0",
+      "value": "8234234234"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Smith",
+      "given": [
+        "Joyce"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "joyce.smith@downunderhospital.com.au",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "3 McGregor Street"
+      ],
+      "city": "Blacktown",
+      "state": "NSW",
+      "postalCode": "2148",
+      "country": "Australia"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                "code": "AHPRA",
+                "display": "Australian Health Practitioner Regulation Agency Registration Number"
+              }
+            ],
+            "text": "AHPRA Registration Number"
+          },
+          "system": "http://hl7.org.au/id/ahpra-registration-number",
+          "value": "MED0000932911"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+            "code": "254415",
+            "display": "Registered Nurse"
+          }
+        ],
+        "text": "Registered Nurse"
+      },
+      "issuer": {
+        "display": "AHPRA"
+      }
+    }
+  ]
+}

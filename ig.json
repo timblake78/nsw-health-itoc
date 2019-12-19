@@ -173,6 +173,9 @@
 		"StructureDefinition/biologicalsex": {
 		  "base": "StructureDefinition-biologicalsex.html"
 		},
+		"StructureDefinition/rendereddosageinstruction": {
+		  "base": "StructureDefinition-rendereddosageinstruction.html"
+		},
 		"StructureDefinition/diluent": {
 		  "base": "StructureDefinition-diluent.html"
 		},

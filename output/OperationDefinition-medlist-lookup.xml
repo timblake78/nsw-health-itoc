@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="medlist-lookup"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MedicationListLookup</h2><p>OPERATION: MedicationListLookup</p><p>The official URL for this operation definition is: </p><pre>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medlist-lookup</pre><p>URL: [base]/Bundle/$medlist-lookup</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>The Patient for which the medication list is requested. The client system SHALL provide the following details as a part of the Patient resource:\r\n1. MRN as identifier\r\n2. Name\r\n3. birthDate\r\n4. Gender</p>
+</div></td></tr><tr><td>OUT</td><td>bundle</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The medication list Bundle if the Patient exists. The system SHALL return back the medication list Bundle as specified in this implementation guide.</p>
+</div></td></tr><tr><td>OUT</td><td>outcome</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>An OperationOutcome containing information on the result.</p>
+</div></td></tr></table><div><p>This operation should be used to look up a patient's medication list. The system will return a bundle with the medication list if the patient exists.</p>
+</div></div>
+  </text>
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medlist-lookup"/>
+  <version value="1.0.0"/>
+  <name value="MedicationListLookup"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2019-10-29T00:00:00+11:00"/>
+  <publisher value="NSW eHealth"/>
+  <purpose value="To allow medication list lookup by patient MRN"/>
+  <code value="medlist-lookup"/>
+  <comment value="This operation should be used to look up a patient&#39;s medication list. The system will return a bundle with the medication list if the patient exists."/>
+  <resource value="Bundle"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="subject"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The Patient for which the medication list is requested. The client system SHALL provide the following details as a part of the Patient resource:\r\n1. MRN as identifier\r\n2. Name\r\n3. birthDate\r\n4. Gender"/>
+    <type value="Patient"/>
+  </parameter>
+  <parameter>
+    <name value="bundle"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="The medication list Bundle if the Patient exists. The system SHALL return back the medication list Bundle as specified in this implementation guide."/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="outcome"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="An OperationOutcome containing information on the result."/>
+    <type value="OperationOutcome"/>
+  </parameter>
+</OperationDefinition>

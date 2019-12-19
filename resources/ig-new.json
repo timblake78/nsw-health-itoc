@@ -138,6 +138,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/rendereddosageinstruction"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/diluent"
       },
       "exampleBoolean" : false,
