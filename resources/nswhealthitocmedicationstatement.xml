@@ -45,7 +45,18 @@
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept">
 		<path value="MedicationStatement.medication[x]"/>
 		<sliceName value="medicationCodeableConcept"/>
-	</element>		
+	</element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
+      <path value="MedicationStatement.medication[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Medication Codes" />
+    </element>	
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="cerner"/>
@@ -63,7 +74,7 @@
 		<min value="1"/>
 	</element>		
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:imdsoft">
-		<path value="MedicationStatement.medication[x].coding"/>
+		<path value="MedicationStatement.medication[x].coding"/>	
 		<sliceName value="imdsoft"/>
 		<short value="The MetaVision / IMDsoft code for the medication"/>			
 		<max value="1"/>

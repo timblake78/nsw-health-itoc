@@ -317,6 +317,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Medication/example3"/>
+      </reference>
+      <name value="Salbutamol example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/example0"/>
       </reference>
       <name value="NSW Health example"/>

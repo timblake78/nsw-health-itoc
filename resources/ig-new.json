@@ -321,6 +321,14 @@
     },
     {
       "reference" : {
+        "reference" : "Medication/example3"
+      },
+      "name" : "Salbutamol example",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "Organization/example0"
       },
       "name" : "NSW Health example",

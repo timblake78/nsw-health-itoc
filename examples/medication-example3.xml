@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="example3"/>
+	
+	<code>
+		<coding>
+		  <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+			<valueCoding>
+			  <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+			  <code value="UPDSF"/>
+			  <display value="Unbranded product with strengths and form"/>
+			</valueCoding>
+		  </extension>
+		  <system value="http://snomed.info/sct"/>
+		  <code value="45078011000036105"/>
+		  <display value="salbutamol 200 microgram powder for inhalation, unit dose"/>
+		</coding>
+		<text value="Salbutamol 200 microgram powder for inhalation, unit dose"/>
+	</code>
+	
+	<form>
+		<text value="Inhalation"/>
+	</form>
+</Medication>
