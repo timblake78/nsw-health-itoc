@@ -4,11 +4,27 @@
 <head>
   <title>NSWHealthTOCImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NSWHealthTOCImplementationGuide</h1>
- <p>Generated Wed Jan 29 10:19:56 AEDT 2020, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.49-SNAPSHOT</p>
+ <p>Generated Fri Jan 31 14:03:00 AEDT 2020, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.53-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -295,7 +311,7 @@
      <td><b>MedicationRequest/example0: MedicationRequest.identifier[0].type.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'http://hl7.org.au/fhir/v2/0203' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest/example0: MedicationRequest.identifier[0]</b></td><td><b>information</b></td><td><b>This element does not match any known slice for the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b></td>
+     <td><b><a href="">MedicationRequest/example0: MedicationRequest.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl25" class="flip" onclick="flip('l25')">Show Reasoning</span><div id="l25" style="display: none"><p>&nbsp;</p>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder: <ul><li>MedicationRequest.identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>MedicationRequest.identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationRequest/example0: MedicationRequest</b></td><td><b>error</b></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'MedicationRequest.identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
