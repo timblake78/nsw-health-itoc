@@ -1,9 +1,9 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 22, warn = 68, info = 36
-IG Publisher Version: v1.0.53-SNAPSHOT
-Generated Fri Jan 31 14:03:00 AEDT 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+err = 20, warn = 68, info = 36
+IG Publisher Version: v1.0.61-SNAPSHOT
+Generated Wed Feb 05 13:44:09 AEDT 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
@@ -34,7 +34,7 @@ Generated Fri Jan 31 14:03:00 AEDT 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocdosage : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocencounter : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedication : 0 / 1
- C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationadministration : 4 / 0
+ C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationadministration : 3 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationlist : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationstatement : 4 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmessageheader : 0 / 0
@@ -136,7 +136,6 @@ WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinitio
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: Differential contains path MedicationAdministration.medication[x].coding which is actually Element.coding, which is not found in the base
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: Differential contains path MedicationAdministration.medication[x].coding.code which is actually Element.coding.code, which is not found in the base
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: Differential contains path MedicationAdministration.medication[x].coding.system which is actually Element.coding.system, which is not found in the base
-ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: The element MedicationAdministration.subject is out of order (and maybe others after it)
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationlist.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocmedicationstatement.xml ==
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement: Differential contains path MedicationStatement.medication[x].coding which is actually Element.coding, which is not found in the base

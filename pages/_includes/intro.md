@@ -31,6 +31,7 @@ The following items remain outstanding in order to complete this Implementation 
 * Finalising of various namespace URIs
 * Addition of further examples
 * MRN (and other identifier) validation / constraints
+* Build against iTOC OntoServer instance
 <br/><br/>
 
 ## Usage

@@ -18,6 +18,13 @@
       <path value="MedicationStatement" />
       <short value="A record of medication being taken by a patient in an Australian healthcare context." />
     </element>
+	<element id="MedicationStatement.basedOn">
+		<path value="MedicationStatement.basedOn"/>
+        <type>
+          <code value="Reference"/>
+          <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
+        </type>
+	</element>	
     <element id="MedicationStatement.extension:diluent">
       <path value="MedicationStatement.extension" />
       <sliceName value="diluent" />
@@ -29,13 +36,6 @@
         <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent" />
       </type>
     </element>
-	<element id="MedicationStatement.basedOn">
-		<path value="MedicationStatement.basedOn"/>
-        <type>
-          <code value="Reference"/>
-          <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
-        </type>
-	</element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <short value="The type of medication usage. For Medication List use case use &quot;inpatient&quot;.  For Medication History use case use &quot;patientspecified&quot;." />
@@ -46,17 +46,6 @@
 		<path value="MedicationStatement.medication[x]"/>
 		<sliceName value="medicationCodeableConcept"/>
 	</element>
-    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
-      <path value="MedicationStatement.medication[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <short value="Medication Codes" />
-    </element>	
 	<element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:cerner">
 		<path value="MedicationStatement.medication[x].coding"/>
 		<sliceName value="cerner"/>
