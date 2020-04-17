@@ -18,16 +18,19 @@
       <path value="MedicationRequest" />
       <definition value="Prescription of medication." />
     </element>
-    <element id="MedicationRequest.status">
-      <path value="MedicationRequest.status" />
-      <min value="1" />
-	  <fixedCode value="active"/>
-    </element>
-    <element id="MedicationRequest.requester">
-      <path value="MedicationRequest.requester" />
-      <short value="The practioner who requested the prescription." />
-      <min value="1" />
-    </element>
+	
+    <element id="MedicationRequest.extension:renderedDosageInstruction">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="renderedDosageInstruction" />
+      <short value="A textual description of the dosage" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction" />
+      </type>
+    </element>	
+	
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>
@@ -42,6 +45,7 @@
         <rules value="open" />
       </slicing>
     </element>
+	
 	<element id="MedicationRequest.identifier:localScriptNumber">
 		<path value="MedicationRequest.identifier"/>
 		<sliceName value="localScriptNumber"/>
@@ -68,16 +72,17 @@
 		<path value="MedicationRequest.identifier.assigner.display"/>
 		<fixedString value="NSW Health"/>
 	</element>	
-    <element id="MedicationRequest.extension:renderedDosageInstruction">
-      <path value="MedicationRequest.extension" />
-      <sliceName value="renderedDosageInstruction" />
-      <short value="A textual description of the dosage" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction" />
-      </type>
-    </element>		
+
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status" />
+      <min value="1" />
+	  <fixedCode value="active"/>
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester" />
+      <short value="The practioner who requested the prescription." />
+      <min value="1" />
+    </element>
+	
   </differential>
 </StructureDefinition>

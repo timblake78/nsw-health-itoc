@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "example3"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example3</p><p><b>code</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>form</b>: Inhalation <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example3</p><p><b>code</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>form</b>: Infusion <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
   ];
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
@@ -33,7 +33,7 @@
      fhir:CodeableConcept.text [ fhir:value "Salbutamol 200 microgram powder for inhalation, unit dose" ]
   ];
   fhir:Medication.form [
-     fhir:CodeableConcept.text [ fhir:value "Inhalation" ]
+     fhir:CodeableConcept.text [ fhir:value "Infusion" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -28,6 +28,7 @@
         <rules value="open" />
       </slicing>
     </element>
+	
     <element id="Encounter.extension:medicationCheckUndertaken">
       <path value="Encounter.extension" />
       <sliceName value="medicationCheckUndertaken" />
@@ -41,6 +42,71 @@
       </type>
       <mustSupport value="true"/>	  
     </element>
+	
+   <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>	
+
+    <element id="Encounter.identifier:domainID">
+      <path value="Encounter.identifier" />
+      <sliceName value="domainID" />
+	  <short value="Unique Domain ID for this patient encounter" />
+	  <min value="1" />
+	  <max value="1" />
+    </element>
+    <element id="Encounter.identifier:domainID.system">
+      <path value="Encounter.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/domainID" />  
+    </element>
+    <element id="Encounter.identifier:domainID.value">
+      <path value="Encounter.identifier.value" />
+	  <short value="The domain identifier value" />  
+      <min value="1" />  
+    </element>
+	
+    <element id="Encounter.identifier:hospitalID">
+      <path value="Encounter.identifier" />
+      <sliceName value="hospitalID" />
+	  <short value="Unique Hospital/Facility ID for this patient encounter" />
+	  <min value="1" />
+    </element>
+    <element id="Encounter.identifier:hospitalID.system">
+      <path value="Encounter.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/hospitalID" />	  
+    </element>
+    <element id="Encounter.identifier:hospitalID.value">
+      <path value="Encounter.identifier.value" />
+	  <short value="The hospital/facility identifier value" />  
+      <min value="1" />
+    </element>	
+	
+    <element id="Encounter.identifier:visitID">
+      <path value="Encounter.identifier" />
+      <sliceName value="visitID" />
+	  <short value="Unique Visit ID for this patient encounter" />
+	  <min value="1" />
+	  <max value="1" />	  
+    </element>
+    <element id="Encounter.identifier:visitID.system">
+      <path value="Encounter.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/visitID" />	  
+    </element>
+    <element id="Encounter.identifier:visitID.value">
+      <path value="Encounter.identifier.value" />
+	  <short value="The visit identifier value" />  
+      <min value="1" />
+    </element>		
+	
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
       <short value="List of participants involved in the encounter, including the patient." />

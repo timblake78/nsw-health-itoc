@@ -3,7 +3,7 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="example3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example3</p><p><b>code</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>form</b>: Inhalation <span style="background: LightGoldenRodYellow">(Details )</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example3</p><p><b>code</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>form</b>: Infusion <span style="background: LightGoldenRodYellow">(Details )</span></p></div>
   </text>
   <code>
     <coding>
@@ -21,6 +21,6 @@
     <text value="Salbutamol 200 microgram powder for inhalation, unit dose"/>
   </code>
   <form>
-    <text value="Inhalation"/>
+    <text value="Infusion"/>
   </form>
 </Medication>

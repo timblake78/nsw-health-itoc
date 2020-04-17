@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="domainid" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/domainid" />
+  <version value="1.0.0" />
+  <name value="DomainID" />
+  <status value="draft" />
+  <date value="2020-04-14"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="Encounter"/>
+  </context> 
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+  	<element id="Extension">
+		<path value="Extension"/>
+		<short value="Mandatory Extension Element for Domain Assigning Facility"/>
+	</element> 
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/domainid" />
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Unique Domain ID for this active patient encounter" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

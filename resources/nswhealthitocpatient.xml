@@ -35,6 +35,17 @@
 
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>	  
       <min value="1" />
     </element>
     <element id="Patient.identifier:medicalRecordNumber">
@@ -42,6 +53,7 @@
       <sliceName value="medicalRecordNumber" />
 	  <short value="An MRN identifier for this patient" />
       <alias value="mrn" />
+      <min value="1" />	  
     </element>
     <element id="Patient.identifier:medicalRecordNumber.system">
       <path value="Patient.identifier.system" />
@@ -59,6 +71,8 @@
       <path value="Patient.identifier" />
       <sliceName value="auID" />
       <short value="An auID for this patient, as per HIRD: 004 Area Unique Patient Identifier" />
+	  <min value="1" />
+	  <max value="1" />
     </element>
     <element id="Patient.identifier:auID.system">
       <path value="Patient.identifier.system" />
@@ -70,22 +84,7 @@
 	  <short value="The auID identifier value" />  	  
       <min value="1" />
     </element>
-    <element id="Patient.identifier:euID">
-      <path value="Patient.identifier" />
-      <sliceName value="euID" />
-      <short value="An euID for this patient, as per HIRD: 037 NSW Health Enterprise Unique Person Identifier (EUID)" />
-      <max value="1" />
-    </element>
-    <element id="Patient.identifier:euID.system">
-      <path value="Patient.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/euid/1.0" />
-    </element>
-    <element id="Patient.identifier:euID.value">
-      <path value="Patient.identifier.value" />
-	  <short value="The euID identifier value" />   
-      <min value="1" />
-    </element>
+
     <element id="Patient.name">
       <path value="Patient.name" />
 	  <short value="One or more names for the patient." />   
@@ -98,11 +97,6 @@
       <min value="1" />
       <mustSupport value="true"/>	  
     </element>
-    <element id="Patient.address">
-      <path value="Patient.address" />
-      <short value="One or more addresses for the patient." />
-      <min value="1" />
-      <mustSupport value="true"/>
-    </element>
+	
   </differential>
 </StructureDefinition>

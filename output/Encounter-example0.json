@@ -8,12 +8,26 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'inpatient acute')</p><p><b>type</b>: Prenatal visit <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '424619006' = 'Prenatal visit', given as 'Prenatal visit'})</span></p><p><b>subject</b>: <a href=\"Patient-example0.html\">Stella Franklin. Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-example0.html\">Doctor Mayo. Generated Summary: id: example0; HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></td></tr></table><p><b>period</b>: 03/11/2011 8:29:46 AM --&gt; 03/11/2011 9:14:46 AM</p><p><b>reasonCode</b>: Normal pregnancy <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '72892002' = 'Normal pregnancy', given as 'Normal pregnancy'})</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: X530, B202, 89452B</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient acute (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code ACUTE = 'inpatient acute', stated as 'inpatient acute')</p><p><b>type</b>: Prenatal visit <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '424619006' = 'Prenatal visit', given as 'Prenatal visit'})</span></p><p><b>subject</b>: <a href=\"Patient-example0.html\">Stella Franklin. Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 112233415A; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-example0.html\">Doctor Mayo. Generated Summary: id: example0; HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></td></tr></table><p><b>period</b>: 03/11/2011 8:29:46 AM --&gt; 03/11/2011 9:14:46 AM</p><p><b>reasonCode</b>: Normal pregnancy <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '72892002' = 'Normal pregnancy', given as 'Normal pregnancy'})</span></p></div>"
   },
   "extension": [
     {
       "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken",
       "valueBoolean": true
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/domainID",
+      "value": "X530"
+    },
+    {
+      "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/hospitalID",
+      "value": "B202"
+    },
+    {
+      "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/visitID",
+      "value": "89452B"
     }
   ],
   "status": "finished",

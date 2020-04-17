@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bf077edf-96e6-461c-b768-fd61473eba56"/>
+  <id value="97b6b4ed-0b5d-464e-90b4-18993535135b"/>
   <meta>
-    <lastUpdated value="2020-02-05T13:41:24.238+11:00"/>
+    <lastUpdated value="2020-04-17T13:41:06.606+10:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype version 1.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-messagetype.html">Message Header Type v1.0.0 (CodeSystem)</a>
+            </p>
             <p>All codes from system 
               <a href="CodeSystem-messagetype.html">
                 <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code>
@@ -82,8 +84,8 @@
         <publisher value="NSW eHealth"/>
         <description value="Message Header Types for Integrated Transitions of Care (iTOC) Messages"/>
         <expansion>
-          <identifier value="urn:uuid:bc369f3f-0813-4fbe-8e2e-2ce46e97cadd"/>
-          <timestamp value="2020-02-05T13:42:13+11:00"/>
+          <identifier value="urn:uuid:9eb85ca6-76f8-41b6-97aa-00c4c88f02e1"/>
+          <timestamp value="2020-04-17T13:41:37+10:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

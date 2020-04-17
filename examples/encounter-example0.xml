@@ -4,10 +4,25 @@
 	<meta>
 		<profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocencounter"/>
 	</meta>
-
+	
 	<extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken">
 	   <valueBoolean value="true"/>
 	</extension> 
+
+	<identifier>
+      <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/domainID"/>
+	  <value value="X530"/>
+	</identifier>
+
+	<identifier>
+      <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/hospitalID"/>
+	  <value value="B202"/>
+	</identifier>
+
+	<identifier>
+      <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/visitID"/>
+	  <value value="89452B"/>
+	</identifier>
 	
 	<status value="finished"/>
 

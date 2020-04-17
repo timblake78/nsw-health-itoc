@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "messagetype"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Header Type</h2><div><p>Message Header Types for Integrated Transitions of Care (iTOC) Messages</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Header Type</h2><div><p>Message Header Types for Integrated Transitions of Care (iTOC) Messages</p>\n</div><ul><li>Include all codes defined in <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype"];
   fhir:ValueSet.identifier [

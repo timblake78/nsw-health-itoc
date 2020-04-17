@@ -4,7 +4,7 @@
   <id value="messagetype"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Message Header Type</h2><div><p>Message Header Types for Integrated Transitions of Care (iTOC) Messages</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-messagetype.html"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>
+</div><ul><li>Include all codes defined in <a href="CodeSystem-messagetype.html"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>
   </text>
   <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype"/>
   <identifier>
