@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/MessageHeader/example0> a fhir:MessageHeader;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example0"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader";
+       fhir:index 0;
+       fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-history = 'This message is a medication history', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href=\"http://cerner.com\">http://cerner.com</a></td></tr></table><p><b>focus</b>: <a href=\"Patient-example0.html\">Generated Summary: id: example0; IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 112233415A; Stella Franklin ; sfranklin@amail.com.au(WORK); gender: female; birthDate: 1985-10-14</a></p></div>"
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.system [ fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype" ];
+     fhir:Coding.code [ fhir:value "medication-history" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.name [ fhir:value "GH" ];
+     fhir:MessageHeader.source.endpoint [ fhir:value "http://cerner.com" ]
+  ];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:link <http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/Patient/example0>;
+     fhir:Reference.reference [ fhir:value "Patient/example0" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/MessageHeader/example0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
