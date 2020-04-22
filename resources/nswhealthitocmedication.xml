@@ -22,7 +22,7 @@
 		<path value="Medication.code.coding"/>
 		<sliceName value="cerner"/>
 		<short value="The cerner (MULTUM) code for the medication" />
-		<min value="1"/>
+		<min value="0"/>
 	</element>
 	<element id="Medication.code.coding:cerner.system">
 		<path value="Medication.code.coding.system"/>
@@ -38,7 +38,7 @@
 		<path value="Medication.code.coding"/>
 		<sliceName value="imdsoft"/>
 		<short value="The MetaVision / IMDsoft code for the medication" />		
-		<min value="1"/>
+		<min value="0"/>
 	</element>
 	<element id="Medication.code.coding:imdsoft.system">
 		<path value="Medication.code.coding.system"/>
