@@ -144,7 +144,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationRequest.identifier.assigner.display","","","",1,1,"","","Y","string {[]} {[]}
 ","ETP vendor name","Name of the ETP vendor assigning this identifier.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationRequest.identifier","localScriptNumber","","",1,*,"","","","Identifier {[]} {[]}
+"MedicationRequest.identifier","localScriptNumber","","",1,1,"","","","Identifier {[]} {[]}
 ","A mandatory medication order ID","Identifier assigined by the prescribing system allows linking of a prescription record to local system identifier.","This is a business identifier, not a resource identifier.","","","","","","","","",,,,,"",,,,"MedicationRequest.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.identifier","Message/Header/PrescriberOrderNumber",".id","FiveWs.identifier","ORC-2-Placer Order Number / ORC-3-Filler Order Number"
 "MedicationRequest.identifier.id","","","",0,1,"","","","string {[]} {[]}

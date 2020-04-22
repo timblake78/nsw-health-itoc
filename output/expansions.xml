@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1c9953e3-663c-4926-bf4f-4774fdf18cb8"/>
+  <id value="27f4887b-0607-40bd-9577-536945e92544"/>
   <meta>
-    <lastUpdated value="2020-04-21T17:56:37.015+10:00"/>
+    <lastUpdated value="2020-04-23T07:14:28.530+10:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -84,8 +84,8 @@
         <publisher value="NSW eHealth"/>
         <description value="Message Header Types for Integrated Transitions of Care (iTOC) Messages"/>
         <expansion>
-          <identifier value="urn:uuid:add4b4dc-ac39-4f78-bf2c-7e8b4934ce44"/>
-          <timestamp value="2020-04-21T17:57:40+10:00"/>
+          <identifier value="urn:uuid:2b00c23a-f3cb-4aa2-879c-46e29ffe8a51"/>
+          <timestamp value="2020-04-23T07:15:04+10:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

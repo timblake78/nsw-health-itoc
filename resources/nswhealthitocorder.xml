@@ -51,6 +51,7 @@
 		<sliceName value="localScriptNumber"/>
 		<short value="A mandatory medication order ID"/>
 		<min value="1"/>
+		<max value="1"/>
 	</element>
 	<element id="MedicationRequest.identifier:localScriptNumber.system">
 		<path value="MedicationRequest.identifier.system"/>
