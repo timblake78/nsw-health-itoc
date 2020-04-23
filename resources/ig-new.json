@@ -159,6 +159,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/mostrecentadmin"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "OperationDefinition/medlist-lookup"
       },
       "exampleBoolean" : false,

@@ -17,7 +17,7 @@
     <element id="MedicationRequest">
       <path value="MedicationRequest" />
       <definition value="Prescription of medication." />
-    </element>
+    </element>	
 	
     <element id="MedicationRequest.extension:renderedDosageInstruction">
       <path value="MedicationRequest.extension" />
@@ -29,7 +29,19 @@
         <code value="Extension" />
         <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction" />
       </type>
-    </element>	
+    </element>
+
+    <element id="MedicationRequest.extension:mostrecentadmin">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="mostRecentAdmin" />
+      <short value="A reference to the most recent medication administration" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin" />
+      </type>
+    </element>			
 	
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />

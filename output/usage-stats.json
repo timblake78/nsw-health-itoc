@@ -28,6 +28,13 @@
       ]
     },
     {
+      "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin",
+      "title": "mostRecentAdmin",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction",
       "title": "RenderedDosageInstruction",
       "types": [
@@ -115,6 +122,9 @@
     ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken": [
       "Encounter"
+    ],
+    "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin": [
+      "MedicationRequest"
     ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction": [
       "MedicationRequest",

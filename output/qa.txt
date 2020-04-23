@@ -1,9 +1,9 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 10, warn = 34, info = 18
+err = 10, warn = 35, info = 18
 IG Publisher Version: v1.0.81-SNAPSHOT
-Generated Thu Apr 23 09:02:00 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+Generated Thu Apr 23 13:51:32 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
@@ -29,6 +29,7 @@ Generated Thu Apr 23 09:02:00 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\diluent : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\ig : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\medicationcheckundertaken : 0 / 0
+ C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\mostrecentadmin : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocallergyintolerance : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocallergyintolerancelist : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocdosage : 0 / 1
@@ -123,6 +124,8 @@ INFORMATION: Practitioner/example2: Practitioner.qualification[0].code.coding[0]
 WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent: The Implementation Guide contains no examples for this extension
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\ig.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\medicationcheckundertaken.xml ==
+== C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\mostrecentadmin.xml ==
+WARNING: StructureDefinition/mostrecentadmin: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocallergyintolerance.xml ==
 WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocallergyintolerance: The Implementation Guide contains no examples for this profile
 == C:\Users\timbl\OneDrive\Documents\nsw-health-fhir-itoc\resources\nswhealthitocallergyintolerancelist.xml ==

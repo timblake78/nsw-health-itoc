@@ -106,6 +106,6 @@
         <code value="Extension" />
         <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction" />
       </type>
-    </element>	
+    </element>
   </differential>
 </StructureDefinition>

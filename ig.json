@@ -182,7 +182,9 @@
 		"StructureDefinition/medicationcheckundertaken": {
 		  "base": "StructureDefinition-medicationcheckundertaken.html"
 		},
-		"OperationDefinition/medlist-lookup": {
+		"StructureDefinition/mostrecentadmin": {
+		  "base": "StructureDefinition-mostrecentadmin.html"
+		},		"OperationDefinition/medlist-lookup": {
 		  "base": "StructureDefinition-medlist-lookup.html"
 		},
 		"OperationDefinition/medhistory-lookup": {
