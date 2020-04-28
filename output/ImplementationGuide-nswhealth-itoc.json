@@ -676,6 +676,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MedicationRequest-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example1"
+        },
+        "name": "Next Scheduled Dose MedicationOrder example",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Medication"
           },
           {

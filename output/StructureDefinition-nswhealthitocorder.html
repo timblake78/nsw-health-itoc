@@ -118,13 +118,17 @@
 <p>A medication order with mandatory status and requester.</p>
 
 <h4 id="usage-notes">Usage Notes</h4>
-<p>The status element should be used to indicate whether this medication request is currently active, has been completed, cancelled or stopped, etc.</p>
+<p>The status element should be used to indicate whether this medication request is currently active, has been completed, cancelled or stopped, etc.  It is strongly recommended that the dispenseRequest.validityPeriod element is used to indicate start and cease times for the medication request.</p>
 
-<p>It is strongly recommended that the dispenseRequest.validityPeriod element is used to indicate start and cease times for the medication request.</p>
+<p>Where this order is an overarching order for a recurring future medication, the intent attribute should be set to “order” (see <a href="MedicationRequest-example0.html">Basic Medication Order</a>). This order can optionally reference a NSWHealthiTOCMedicationAdministration resource via the mostrecentadmin reference extension.</p>
+
+<p>Where this order describes the next scheduled dose, the  intent attribute should be set to “instance-order” (see <a href="MedicationRequest-example1.html">Medication Instance Order - Next Scheduled Dose</a>).</p>
 
 <p><strong>Examples</strong></p>
 
-<p><a href="MedicationRequest-example0.html">Basic Medication Request</a></p>
+<p><a href="MedicationRequest-example0.html">Basic Medication Order</a></p>
+
+<p><a href="MedicationRequest-example1.html">Medication Instance Order - Next Scheduled Dose</a></p>
 
 
 
@@ -1337,7 +1341,7 @@ $( '#tabs' ).tabs({
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Thu, Apr 23, 2020 13:49+1000. |
+        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Wed, Apr 29, 2020 08:48+1000. |
              <!--  <a style="color: #81BEF7" rel="license" <!-- <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

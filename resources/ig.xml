@@ -294,6 +294,14 @@
     </resource>
 	<resource>
       <reference>
+        <reference value="MedicationRequest/example1"/>
+      </reference>
+      <name value="Next Scheduled Dose MedicationOrder example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>		
+	<resource>
+      <reference>
         <reference value="Medication/example0"/>
       </reference>
       <name value="Basic Medication example"/>

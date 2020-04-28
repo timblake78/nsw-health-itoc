@@ -47,11 +47,21 @@ The following diagram shows the logical model for Medication List:
 * Medication lists should be sent as a Bundle with type="message".
 * All resources should be included directly as root level entries in the bundle, with appropriate id references between resources.  Where URL locators are not available, uuids should be used.
 * The medication list bundle must contain a single [NSWHealthiTOCMessageHeader](StructureDefinition-nswhealthitocmessageheader.html) resource as its first entry.
+* The medication list bundle must provide zero or more [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources.
 * The [NSWHealthiTOCMessageHeader](StructureDefinition-nswhealthitocmessageheader.html) resource should have a fixed event code of "medication-list".
 * The medication list bundle must contain a single [NSWHealthiTOCPatient](StructureDefinition-nswhealthitocpatient.html) resource.
 * The medication list bundle must contain a single List resource which provides an order for the MedicationStatements in the bundle. Target systems may process this List if they are capable of doing so.
 * [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources must reference the relevant [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) through the basedOn attribute.
-* The medication list bundle must provide zero or more [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources.
+* The [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) must have intent="order".
+* The [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) must reference a single [NSWHealthiTOCPractitioner](StructureDefinition-nswhealthitocpractitioner.html) resource via requester.agent
+* The [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) may reference a single [NSWHealthiTOCMedicationAdministration](StructureDefinition-nswhealthitocmedicationadministration.html) resource via the mostrecentadmin reference extension.
+* An additional [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) with intent="instance-order" may reference the overarching [NSWHealthiTOCOrder](StructureDefinition-nswhealthitocorder.html) resource (with intent="order) via the basedOn attribute.
+* The [NSWHealthiTOCMedicationStatement](StructureDefinition-nswhealthitocmedicationstatement.html) resources must reference a single [NSWHealthiTOCMedication](StructureDefinition-nswhealthitocmedication.html) resource.
+<br/><br/>
+
+**Examples**
+
+[Medication List Bundle Example](Bundle-patientprofile1-medlist.html)
 <br/><br/>
 
 ## Medication History
