@@ -62,49 +62,8 @@
 	
 	<dosageInstruction>
         <timing>
-            <repeat>
-			<frequency value="1" />
-			<period value="1" />
-			<periodUnit value="d" />
-			<when value="MORN" />
-            </repeat>
+			<event value="2020-08-08T08:00:00.000Z"/>
         </timing>             
-
-		<route>
-			  <coding>
-					<system value="http://snomed.info/sct"/>
-					<code value="26643006"/>
-					<display value="Oral use"/>	
-			  </coding>
-			<text value="Oral" />
-		</route>
-		
-		<doseAndRate>
-			<doseQuantity>
-				<value value="10" />
-				<unit value="mg" />
-			</doseQuantity>
-		</doseAndRate>	
 	</dosageInstruction>
-
-    <dispenseRequest>
-        <validityPeriod>
-            <start value="2018-07-15"/>
-            <end value="2019-07-15"/>
-        </validityPeriod>
-        <numberOfRepeatsAllowed value="2"/>
-        <quantity>
-            <value value="20"/>
-            <unit value="Tab"/>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
-            <code value="Tab"/>
-        </quantity>
-        <expectedSupplyDuration>
-            <value value="10"/>
-            <unit value="days"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="d"/>
-        </expectedSupplyDuration>
-    </dispenseRequest>
 	
 </MedicationRequest>

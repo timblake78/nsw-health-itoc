@@ -1,9 +1,9 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 11, warn = 38, info = 20
+err = 11, warn = 37, info = 20
 IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Wed Apr 29 08:50:19 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+Generated Wed Apr 29 16:05:57 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 1 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
@@ -15,7 +15,7 @@ Generated Wed Apr 29 08:50:19 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example3 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationadministration-patientprofile1-mar-example0 : 1 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example0 : 1 / 5
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example1 : 1 / 5
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example1 : 1 / 4
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example0 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example1 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example2 : 0 / 1
@@ -97,7 +97,6 @@ INFORMATION: MedicationRequest/example1: MedicationRequest.identifier[0]: This e
 ERROR: MedicationRequest/example1: MedicationRequest: Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'MedicationRequest.identifier[localScriptNumber]': minimum required = 1, but only found 0
 WARNING: MedicationRequest/example1: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
 WARNING: MedicationRequest/example1: MedicationRequest.reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator
-WARNING: MedicationRequest/example1: MedicationRequest.dosageInstruction[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example0.xml ==
 WARNING: MedicationStatement/patientprofile1-medhistory-example0: MedicationStatement.reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
 WARNING: MedicationStatement/patientprofile1-medhistory-example0: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator

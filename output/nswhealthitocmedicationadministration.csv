@@ -241,8 +241,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationAdministration.effective[x]","","","",1,1,"","","Y","dateTime {[]} {[]}
 Period {[]} {[]}","Start and end time of administration","A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.effective[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]","RXA-3-Date/Time Start of Administration / RXA-4-Date/Time End of Administration"
-"MedicationAdministration.performer","","","",1,*,"","","Y","BackboneElement {[]} {[]}
-","The practioner(s) who performed the administration.","Indicates who or what performed the medication administration and how they were involved.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"MedicationAdministration.performer","","","",0,*,"","","Y","BackboneElement {[]} {[]}
+","Who performed the medication administration and what they did","Indicates who or what performed the medication administration and how they were involved.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=PRF]","FiveWs.actor","RXA-10-Administering Provider / PRT-5-Participation Person: PRT-4-Participation='AP' (RXA-10 is deprecated)"
 "MedicationAdministration.performer.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

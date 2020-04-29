@@ -91,11 +91,6 @@
         <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient" />
       </type>
     </element>
-    <element id="MedicationAdministration.performer">
-      <path value="MedicationAdministration.performer" />
-      <short value="The practioner(s) who performed the administration." />
-      <min value="1" />
-    </element>
     <element id="MedicationAdministration.request">
       <path value="MedicationAdministration.request" />
       <short value="The order relating to this medication administration." />

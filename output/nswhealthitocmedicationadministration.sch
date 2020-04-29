@@ -14,7 +14,6 @@
     <sch:rule context="f:MedicationAdministration">
       <sch:assert test="count(f:extension[@url = 'http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent']) &lt;= 1">extension with URL = 'http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:request) &gt;= 1">request: minimum cardinality of 'request' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
