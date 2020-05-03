@@ -21,7 +21,8 @@
             </coding>
             <text value="Local Prescription Number"/>
         </type>
-        <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid"/>
+
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/prescription/1.0/8003627500000328"/>
         <value value="53720010"/>
         <assigner>
             <display value="NSW Health"/>
@@ -59,7 +60,11 @@
 			<display value="Hypertensive disorder, systemic arterial"/>
 		</coding>
 	</reasonCode>
-	
+
+	<basedOn>
+		<reference value="MedicationRequest/example0"/>
+	</basedOn>
+			
 	<dosageInstruction>
         <timing>
 			<event value="2020-08-08T08:00:00.000Z"/>

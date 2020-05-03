@@ -287,6 +287,14 @@
     },
     {
       "reference" : {
+        "reference" : "Bundle/patientprofile1-medlist"
+      },
+      "name" : "Basic Bundle example",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "MessageHeader/example0"
       },
       "name" : "Basic Message Header example",

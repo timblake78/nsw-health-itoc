@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="patientprofile1-medlist"/>
+  <type value="message"/>
+  <entry>
+    <fullUrl value="urn:uuid:e22a6ef2-db29-426d-91bb-bcdc4935b4f0"/>
+    <resource>
+      <MessageHeader>
+        <id value="example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication list (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-list = 'This message is a medication list', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href="http://cerner.com">http://cerner.com</a></td></tr></table><p><b>focus</b>: <a href="#backboneelement_example0">Generated Summary: unknown resource entry</a></p></div>
+        </text>
+        <eventCoding>
+          <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"/>
+          <code value="medication-list"/>
+        </eventCoding>
+        <source>
+          <name value="GH"/>
+          <endpoint value="http://cerner.com"/>
+        </source>
+        <focus>
+          <reference value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/>
+    <resource>
+      <Patient>
+        <id value="example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>
+        </text>
+        <extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex">
+          <valueCoding>
+            <system value="http://meteor.aihw.gov.au/content/index.phtml/itemId/635126"/>
+            <code value="2"/>
+            <display value="Female"/>
+          </valueCoding>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+          <valueCoding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+            <code value="9"/>
+            <display value="Not stated/inadequately described"/>
+          </valueCoding>
+        </extension>
+        <identifier>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+            <valueCoding>
+              <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+              <code value="Active"/>
+              <display value="Active"/>
+            </valueCoding>
+          </extension>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+            <valueCoding>
+              <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+              <code value="Verified"/>
+              <display value="Verified"/>
+            </valueCoding>
+          </extension>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NI"/>
+              <display value="National unique individual identifier"/>
+            </coding>
+            <text value="IHI"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+          <value value="8003608166690503"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MC"/>
+              <display value="Patient&#39;s Medicare Number"/>
+            </coding>
+            <text value="Medicare Number"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+          <value value="32788511952"/>
+          <period>
+            <end value="2021-05"/>
+          </period>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+          </type>
+          <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/mrn/1.0"/>
+          <value value="123456789"/>
+          <assigner>
+            <reference value="Organization/example0"/>
+          </assigner>
+        </identifier>
+        <identifier>
+          <type>
+            <text value="auID"/>
+          </type>
+          <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/auid/1.0"/>
+          <value value="123456789"/>
+        </identifier>
+        <name>
+          <family value="Franklin"/>
+          <given value="Stella"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="sfranklin@amail.com.au"/>
+          <use value="work"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1985-10-14"/>
+        <address>
+          <use value="home"/>
+          <line value="31 Pacquola Street"/>
+          <city value="Blacktown"/>
+          <state value="NSW"/>
+          <postalCode value="2148"/>
+          <country value="Australia"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e7a1bd40-421d-4159-a7ad-b3446092ec4e"/>
+    <resource>
+      <List>
+        <id value="medhistory-list-example0"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medhistory-list-example0</p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Current Medicine <span style="background: LightGoldenRodYellow">(Details : {https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1 code '101.32009' = '101.32009', given as 'Current Medicine'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 29/10/2019 12:00:00 AM</p><h3>Entries</h3><table class="grid"><tr><td>-</td><td><b>Item</b></td></tr><tr><td>*</td><td><a href="#backboneelement_patientprofile1-medlist-example0">Generated Summary: unknown resource entry</a></td></tr></table></div>
+        </text>
+        <status value="current"/>
+        <mode value="snapshot"/>
+        <code>
+          <coding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="101.32009"/>
+            <display value="Current Medicine"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/>
+        </subject>
+        <date value="2019-10-29"/>
+        <entry>
+          <item>
+            <reference value="urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe"/>
+    <resource>
+      <MedicationStatement>
+        <id value="patientprofile1-medlist-example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medlist-example0</p><p><b>meta</b>: </p><p><b>basedOn</b>: <a href="#backboneelement_example0">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href="#backboneelement_example0">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
+          <valueString value="Norvasc"/>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
+          <valueString value="Amlodipine"/>
+        </extension>
+        <basedOn>
+          <reference value="urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065"/>
+          <display value="Supporting Medication Order"/>
+        </basedOn>
+        <status value="active"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+          </coding>
+        </category>
+        <medicationCodeableConcept>
+          <coding>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+              <valueCoding>
+                <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+                <code value="UPDSF"/>
+                <display value="Unbranded product with strengths and form"/>
+              </valueCoding>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <code value="23519011000036101"/>
+            <display value="amlodipine 10 mg tablet"/>
+          </coding>
+          <text value="Amlodipine 10 mg Tablet"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"/>
+          <display value="Stella Franklin"/>
+        </subject>
+        <dateAsserted value="2019-10-29"/>
+        <informationSource>
+          <reference value="urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a"/>
+          <display value="Doctor Mayo"/>
+        </informationSource>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="38341003"/>
+            <display value="Hypertensive disorder, systemic arterial"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="MORN"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a"/>
+    <resource>
+      <Practitioner>
+        <id value="example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932945</td><td>General Practitioner <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Practitioner'})</span></td><td>AHPRA</td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NPI"/>
+              <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+          <value value="8003619900015717"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+              <code value="PRES"/>
+              <display value="Prescriber Number"/>
+            </coding>
+            <text value="Prescriber Number"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/medicare-prescriber-number"/>
+          <value value="453221"/>
+        </identifier>
+        <identifier>
+          <type>
+            <text value="StaffLink Number"/>
+          </type>
+          <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/stafflinkid/1.0"/>
+          <value value="8234234234"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Mayo"/>
+          <given value="Helen"/>
+          <prefix value="Dr"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="helen.mayo@downunderhospital.com.au"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <use value="work"/>
+          <line value="3 McGregor Street"/>
+          <city value="Blacktown"/>
+          <state value="NSW"/>
+          <postalCode value="2148"/>
+          <country value="Australia"/>
+        </address>
+        <qualification>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                <code value="AHPRA"/>
+                <display value="Australian Health Practitioner Regulation Agency Registration Number"/>
+              </coding>
+              <text value="AHPRA Registration Number"/>
+            </type>
+            <system value="http://hl7.org.au/id/ahpra-registration-number"/>
+            <value value="MED0000932945"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+              <code value="253111"/>
+              <display value="General Practitioner"/>
+            </coding>
+            <text value="General Practitioner"/>
+          </code>
+          <issuer>
+            <display value="AHPRA"/>
+          </issuer>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065"/>
+    <resource>
+      <MedicationRequest>
+        <id value="example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: Local Prescription Number = 53720010</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 14/06/2018 12:00:00 AM</p><p><b>requester</b>: <a href="#backboneelement_example0">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>15/07/2018 12:00:00 AM --&gt; 15/07/2019 12:00:00 AM</td><td>2</td><td>20 Tab<span style="background: LightGoldenRodYellow"> (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code Tab = 'Tab')</span></td><td>10 days<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
+          <valueString value="APO"/>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
+          <valueString value="Amlodipine"/>
+        </extension>
+        <extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin">
+          <valueReference>
+            <reference value="urn:uuid:1bd306fb-3170-4607-88b7-746a5473ea6b"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org.au/fhir/v2/0203"/>
+              <code value="LPN"/>
+            </coding>
+            <text value="Local Prescription Number"/>
+          </type>
+          <system value="http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid"/>
+          <value value="53720010"/>
+          <assigner>
+            <display value="NSW Health"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="23519011000036101"/>
+            <display value="amlodipine 10 mg tablet"/>
+          </coding>
+          <text value="Amlodipine 10 mg Tablet"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/example0"/>
+          <display value="Stella Franklin"/>
+        </subject>
+        <authoredOn value="2018-06-14"/>
+        <requester>
+          <reference value="Practitioner/example0"/>
+          <display value="Doctor Mayo"/>
+        </requester>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="38341003"/>
+            <display value="Hypertensive disorder, systemic arterial"/>
+          </coding>
+        </reasonCode>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+              <when value="MORN"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <dispenseRequest>
+          <validityPeriod>
+            <start value="2018-07-15"/>
+            <end value="2019-07-15"/>
+          </validityPeriod>
+          <numberOfRepeatsAllowed value="2"/>
+          <quantity>
+            <value value="20"/>
+            <unit value="Tab"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+            <code value="Tab"/>
+          </quantity>
+          <expectedSupplyDuration>
+            <value value="10"/>
+            <unit value="days"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </expectedSupplyDuration>
+        </dispenseRequest>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47aa6b1d-682a-401b-8518-4425dc99e5b1"/>
+    <resource>
+      <MedicationRequest>
+        <id value="example1"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>meta</b>: </p><p><b>identifier</b>: Local Prescription Number = 53720010</p><p><b>status</b>: active</p><p><b>intent</b>: instance-order</p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 14/06/2018 12:00:00 AM</p><p><b>requester</b>: <a href="#backboneelement_example0">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>basedOn</b>: <a href="#backboneelement_example0">Generated Summary: unknown resource entry</a></p><p><b>dosageInstruction</b>: </p></div>
+        </text>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
+          <valueString value="APO"/>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
+          <valueString value="Amlodipine"/>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org.au/fhir/v2/0203"/>
+              <code value="LPN"/>
+            </coding>
+            <text value="Local Prescription Number"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hpio-scoped/prescription/1.0/8003627500000328"/>
+          <value value="53720010"/>
+          <assigner>
+            <display value="NSW Health"/>
+          </assigner>
+        </identifier>
+        <status value="active"/>
+        <intent value="instance-order"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="23519011000036101"/>
+            <display value="amlodipine 10 mg tablet"/>
+          </coding>
+          <text value="Amlodipine 10 mg Tablet"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/example0"/>
+          <display value="Stella Franklin"/>
+        </subject>
+        <authoredOn value="2018-06-14"/>
+        <requester>
+          <reference value="Practitioner/example0"/>
+          <display value="Doctor Mayo"/>
+        </requester>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="38341003"/>
+            <display value="Hypertensive disorder, systemic arterial"/>
+          </coding>
+        </reasonCode>
+        <basedOn>
+          <reference value="urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065"/>
+        </basedOn>
+        <dosageInstruction>
+          <timing>
+            <event value="2020-08-08T08:00:00.000Z"/>
+          </timing>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1bd306fb-3170-4607-88b7-746a5473ea6b"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="patientprofile1-mar-example0"/>
+        <meta>
+          <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-mar-example0</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>category</b>: inpatient <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 15/05/2018 6:00:00 PM</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href="Practitioner-example1.html">Joyce Smith (Registered Nurse). Generated Summary: id: example1; StaffLink Number = 8234234234; active; Joyce Smith ; joyce.smith@downunderhospital.com.au(WORK)</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: Witness <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/med-admin-perform-function code 'witness' = 'Witness', given as 'Witness'})</span></p><p><b>actor</b>: <a href="Practitioner-example2.html">Kerry Jones (Registered Nurse). Generated Summary: id: example2; StaffLink Number = 8234234234; active; Kerry Jones ; kerry.jones@downunderhospital.com.au(WORK)</a></p></blockquote><p><b>request</b>: <a href="#backboneelement_example0">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td>*</td><td>Oral <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '26643006' = 'Oral use', given as 'Oral use'})</span></td><td>10 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <category>
+          <text value="inpatient"/>
+        </category>
+        <medicationCodeableConcept>
+          <coding>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+              <valueCoding>
+                <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+                <code value="UPDSF"/>
+                <display value="Unbranded product with strengths and form"/>
+              </valueCoding>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <code value="23519011000036101"/>
+            <display value="amlodipine 10 mg tablet"/>
+          </coding>
+          <text value="Amlodipine 10 mg Tablet"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/example0"/>
+          <display value="Stella Franklin"/>
+        </subject>
+        <effectiveDateTime value="2018-05-15T08:00:00.000+00:00"/>
+        <performer>
+          <actor>
+            <reference value="Practitioner/example1"/>
+            <display value="Joyce Smith (Registered Nurse)"/>
+          </actor>
+        </performer>
+        <performer>
+          <function>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/med-admin-perform-function"/>
+              <code value="witness"/>
+              <display value="Witness"/>
+            </coding>
+          </function>
+          <actor>
+            <reference value="Practitioner/example2"/>
+            <display value="Kerry Jones (Registered Nurse)"/>
+          </actor>
+        </performer>
+        <request>
+          <reference value="MedicationRequest/example0"/>
+          <display value="Supporting Medication Order"/>
+        </request>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="26643006"/>
+              <display value="Oral use"/>
+            </coding>
+            <text value="Oral"/>
+          </route>
+          <dose>
+            <value value="10"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+  </entry>
+</Bundle>

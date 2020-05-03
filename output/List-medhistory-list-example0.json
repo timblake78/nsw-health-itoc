@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Date: 29/10/2019 12:00:00 AMMode: snapshotStatus: currentCode: Current MedicineSubject: <a href=\"Patient-example0.html\">?ngen-1?</a><b>Items</b><a href=\"MedicationStatement-patientprofile1-medhistory-example0.html\">?ngen-1?</a><a href=\"MedicationStatement-patientprofile1-medhistory-example1.html\">?ngen-1?</a></td></tr><tr/></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"/><tr/><tr/></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Date: 29/10/2019 12:00:00 AMMode: snapshotStatus: currentCode: Current MedicineSubject: <a href=\"Patient-example0.html\">?ngen-1?</a><b>Items</b><a href=\"MedicationStatement-patientprofile1-medhistory-example0.html\">?ngen-1?</a><a href=\"MedicationStatement-patientprofile1-medhistory-example1.html\">?ngen-1?</a></td></tr><tr></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"></tr><tr></tr><tr></tr></table></div>"
   },
   "status": "current",
   "mode": "snapshot",

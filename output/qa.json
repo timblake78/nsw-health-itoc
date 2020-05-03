@@ -3,10 +3,10 @@
   "name": "NSWHealthTOCImplementationGuide",
   "package-id": "nsw.health.fhir.toc",
   "ig-ver": "1.0.0",
-  "date": "Wed, 29 Apr, 2020 16:03:49 +1000",
-  "errs": 11,
-  "warnings": 37,
-  "hints": 20,
+  "date": "Mon, 04 May, 2020 09:40:48 +1000",
+  "errs": 14,
+  "warnings": 52,
+  "hints": 33,
   "version": "4.0.1",
-  "tool": "4.2.0 (3)"
+  "tool": "4.4.0 (3)"
 }

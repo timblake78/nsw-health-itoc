@@ -124,6 +124,7 @@
       "Encounter"
     ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin": [
+      "Bundle.entry.resource",
       "MedicationRequest"
     ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/rendereddosageinstruction": [

@@ -1,0 +1,751 @@
+{
+  "resourceType": "Bundle",
+  "id": "patientprofile1-medlist",
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e22a6ef2-db29-426d-91bb-bcdc4935b4f0",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication list (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-list = 'This message is a medication list', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href=\"http://cerner.com\">http://cerner.com</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_example0\">Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "eventCoding": {
+          "system": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype",
+          "code": "medication-list"
+        },
+        "source": {
+          "name": "GH",
+          "endpoint": "http://cerner.com"
+        },
+        "focus": [
+          {
+            "reference": "urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex",
+            "valueCoding": {
+              "system": "http://meteor.aihw.gov.au/content/index.phtml/itemId/635126",
+              "code": "2",
+              "display": "Female"
+            }
+          },
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/indigenous-status",
+            "valueCoding": {
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
+              "code": "9",
+              "display": "Not stated/inadequately described"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/ihi-status",
+                "valueCoding": {
+                  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
+                  "code": "Active",
+                  "display": "Active"
+                }
+              },
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status",
+                "valueCoding": {
+                  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
+                  "code": "Verified",
+                  "display": "Verified"
+                }
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NI",
+                  "display": "National unique individual identifier"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608166690503"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MC",
+                  "display": "Patient's Medicare Number"
+                }
+              ],
+              "text": "Medicare Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/medicare-number",
+            "value": "32788511952",
+            "period": {
+              "end": "2021-05"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/mrn/1.0",
+            "value": "123456789",
+            "assigner": {
+              "reference": "Organization/example0"
+            }
+          },
+          {
+            "type": {
+              "text": "auID"
+            },
+            "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/auid/1.0",
+            "value": "123456789"
+          }
+        ],
+        "name": [
+          {
+            "family": "Franklin",
+            "given": [
+              "Stella"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "sfranklin@amail.com.au",
+            "use": "work"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-10-14",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "31 Pacquola Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "postalCode": "2148",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e7a1bd40-421d-4159-a7ad-b3446092ec4e",
+      "resource": {
+        "resourceType": "List",
+        "id": "medhistory-list-example0",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medhistory-list-example0</p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Current Medicine <span style=\"background: LightGoldenRodYellow\">(Details : {https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1 code '101.32009' = '101.32009', given as 'Current Medicine'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 29/10/2019 12:00:00 AM</p><h3>Entries</h3><table class=\"grid\"><tr><td>-</td><td><b>Item</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_patientprofile1-medlist-example0\">Generated Summary: unknown resource entry</a></td></tr></table></div>"
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1",
+              "code": "101.32009",
+              "display": "Current Medicine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308"
+        },
+        "date": "2019-10-29",
+        "entry": [
+          {
+            "item": {
+              "reference": "urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:db9c49b1-fa73-4059-9739-93a2806573fe",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "patientprofile1-medlist-example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medlist-example0</p><p><b>meta</b>: </p><p><b>basedOn</b>: <a href=\"#backboneelement_example0\">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"#backboneelement_example0\">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosage</b>: </p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+            "valueString": "Norvasc"
+          },
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+            "valueString": "Amlodipine"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065",
+            "display": "Supporting Medication Order"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "inpatient",
+              "display": "Inpatient"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                    "code": "UPDSF",
+                    "display": "Unbranded product with strengths and form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg Tablet"
+        },
+        "subject": {
+          "reference": "urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308",
+          "display": "Stella Franklin"
+        },
+        "dateAsserted": "2019-10-29",
+        "informationSource": {
+          "reference": "urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a",
+          "display": "Doctor Mayo"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "38341003",
+                "display": "Hypertensive disorder, systemic arterial"
+              }
+            ]
+          }
+        ],
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d",
+                "when": [
+                  "MORN"
+                ]
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral use"
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a68058ed-c34c-4910-b537-4a2c3ed6c81a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932945</td><td>General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003619900015717"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                  "code": "PRES",
+                  "display": "Prescriber Number"
+                }
+              ],
+              "text": "Prescriber Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/medicare-prescriber-number",
+            "value": "453221"
+          },
+          {
+            "type": {
+              "text": "StaffLink Number"
+            },
+            "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/stafflinkid/1.0",
+            "value": "8234234234"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Mayo",
+            "given": [
+              "Helen"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "helen.mayo@downunderhospital.com.au",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "3 McGregor Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "postalCode": "2148",
+            "country": "Australia"
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                      "code": "AHPRA",
+                      "display": "Australian Health Practitioner Regulation Agency Registration Number"
+                    }
+                  ],
+                  "text": "AHPRA Registration Number"
+                },
+                "system": "http://hl7.org.au/id/ahpra-registration-number",
+                "value": "MED0000932945"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+                  "code": "253111",
+                  "display": "General Practitioner"
+                }
+              ],
+              "text": "General Practitioner"
+            },
+            "issuer": {
+              "display": "AHPRA"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: Local Prescription Number = 53720010</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 14/06/2018 12:00:00 AM</p><p><b>requester</b>: <a href=\"#backboneelement_example0\">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>15/07/2018 12:00:00 AM --&gt; 15/07/2019 12:00:00 AM</td><td>2</td><td>20 Tab<span style=\"background: LightGoldenRodYellow\"> (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code Tab = 'Tab')</span></td><td>10 days<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></td></tr></table></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+            "valueString": "APO"
+          },
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+            "valueString": "Amlodipine"
+          },
+          {
+            "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/mostrecentadmin",
+            "valueReference": {
+              "reference": "urn:uuid:1bd306fb-3170-4607-88b7-746a5473ea6b"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org.au/fhir/v2/0203",
+                  "code": "LPN"
+                }
+              ],
+              "text": "Local Prescription Number"
+            },
+            "system": "http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid",
+            "value": "53720010",
+            "assigner": {
+              "display": "NSW Health"
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg Tablet"
+        },
+        "subject": {
+          "reference": "Patient/example0",
+          "display": "Stella Franklin"
+        },
+        "authoredOn": "2018-06-14",
+        "requester": {
+          "reference": "Practitioner/example0",
+          "display": "Doctor Mayo"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "38341003",
+                "display": "Hypertensive disorder, systemic arterial"
+              }
+            ]
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d",
+                "when": [
+                  "MORN"
+                ]
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral use"
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2018-07-15",
+            "end": "2019-07-15"
+          },
+          "numberOfRepeatsAllowed": 2,
+          "quantity": {
+            "value": 20,
+            "unit": "Tab",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code": "Tab"
+          },
+          "expectedSupplyDuration": {
+            "value": 10,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:47aa6b1d-682a-401b-8518-4425dc99e5b1",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "example1",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>meta</b>: </p><p><b>identifier</b>: Local Prescription Number = 53720010</p><p><b>status</b>: active</p><p><b>intent</b>: instance-order</p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 14/06/2018 12:00:00 AM</p><p><b>requester</b>: <a href=\"#backboneelement_example0\">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>basedOn</b>: <a href=\"#backboneelement_example0\">Generated Summary: unknown resource entry</a></p><p><b>dosageInstruction</b>: </p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+            "valueString": "APO"
+          },
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+            "valueString": "Amlodipine"
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org.au/fhir/v2/0203",
+                  "code": "LPN"
+                }
+              ],
+              "text": "Local Prescription Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/prescription/1.0/8003627500000328",
+            "value": "53720010",
+            "assigner": {
+              "display": "NSW Health"
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "instance-order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg Tablet"
+        },
+        "subject": {
+          "reference": "Patient/example0",
+          "display": "Stella Franklin"
+        },
+        "authoredOn": "2018-06-14",
+        "requester": {
+          "reference": "Practitioner/example0",
+          "display": "Doctor Mayo"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "38341003",
+                "display": "Hypertensive disorder, systemic arterial"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "timing": {
+              "event": [
+                "2020-08-08T08:00:00.000Z"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1bd306fb-3170-4607-88b7-746a5473ea6b",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "patientprofile1-mar-example0",
+        "meta": {
+          "profile": [
+            "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-mar-example0</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>category</b>: inpatient <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 15/05/2018 6:00:00 PM</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"Practitioner-example1.html\">Joyce Smith (Registered Nurse). Generated Summary: id: example1; StaffLink Number = 8234234234; active; Joyce Smith ; joyce.smith@downunderhospital.com.au(WORK)</a></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: Witness <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/med-admin-perform-function code 'witness' = 'Witness', given as 'Witness'})</span></p><p><b>actor</b>: <a href=\"Practitioner-example2.html\">Kerry Jones (Registered Nurse). Generated Summary: id: example2; StaffLink Number = 8234234234; active; Kerry Jones ; kerry.jones@downunderhospital.com.au(WORK)</a></p></blockquote><p><b>request</b>: <a href=\"#backboneelement_example0\">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td>*</td><td>Oral <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '26643006' = 'Oral use', given as 'Oral use'})</span></td><td>10 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span></td></tr></table></div>"
+        },
+        "status": "completed",
+        "category": {
+          "text": "inpatient"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                    "code": "UPDSF",
+                    "display": "Unbranded product with strengths and form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg Tablet"
+        },
+        "subject": {
+          "reference": "Patient/example0",
+          "display": "Stella Franklin"
+        },
+        "effectiveDateTime": "2018-05-15T08:00:00.000+00:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/example1",
+              "display": "Joyce Smith (Registered Nurse)"
+            }
+          },
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+                  "code": "witness",
+                  "display": "Witness"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/example2",
+              "display": "Kerry Jones (Registered Nurse)"
+            }
+          }
+        ],
+        "request": {
+          "reference": "MedicationRequest/example0",
+          "display": "Supporting Medication Order"
+        },
+        "dosage": {
+          "route": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26643006",
+                "display": "Oral use"
+              }
+            ],
+            "text": "Oral"
+          },
+          "dose": {
+            "value": 10,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      }
+    }
+  ]
+}

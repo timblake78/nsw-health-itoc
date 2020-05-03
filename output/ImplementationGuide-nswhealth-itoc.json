@@ -622,6 +622,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-patientprofile1-medlist.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/patientprofile1-medlist"
+        },
+        "name": "Basic Bundle example",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageHeader"
           },
           {

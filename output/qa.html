@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 11, warn = 37, info = 20 -->
+<!-- broken links = 1, errors = 14, warn = 52, info = 33 -->
 <head>
   <title>NSWHealthTOCImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,8 +23,8 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NSWHealthTOCImplementationGuide</h1>
- <p>Generated Wed Apr 29 16:05:56 AEST 2020, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.82-SNAPSHOT</p>
+ <p>Generated Mon May 04 09:41:53 AEST 2020, FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = <a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0">http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0</a> (<a href="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.88-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -32,11 +32,14 @@
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-itoc_examples_bundle-patientprofile1-medhistory"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory</b></a></td><td><b>0</b></td><td><b>18</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-itoc_examples_bundle-patientprofile1-medlist"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist</b></a></td><td><b>3</b></td><td><b>28</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_timbl_OneDrive_Documents_nsw-health-itoc_examples_encounter-example0"><b>C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\encounter-example0</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -172,9 +175,6 @@
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be nsw.health.fhir.toc</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="guidance.html#d152c71d-2a38-4718-bb68-59382cfc98dd">guidance.html#/html/body/div/div/div/div/div/p/a at Line 174, column 5</a></b></td><td><b>error</b></td><td><b>The link 'Bundle-patientprofile1-medlist.html' for &quot;Medication List Bundle Example&quot; cannot be resolved</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="C__Users_timbl_OneDrive_Documents_nsw-health-itoc_examples_bundle-patientprofile1-medhistory"> </a>
@@ -236,6 +236,107 @@
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle/patientprofile1-medhistory: Bundle.entry[5].resource.ofType(Practitioner).qualification[0].code.coding[0] (l452/c14)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_timbl_OneDrive_Documents_nsw-health-itoc_examples_bundle-patientprofile1-medlist"> </a>
+<h2><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding) (l41/c18)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://meteor.aihw.gov.au/content/index.phtml/itemId/635126&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding) (l41/c18)</b></td><td><b>warning</b></td><td><b>ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).extension[1].value.ofType(Coding) (l49/c18)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).extension[1].value.ofType(Coding) (l49/c18)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[0].value.ofType(Coding) (l57/c19)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[0].value.ofType(Coding) (l57/c19)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[1].value.ofType(Coding) (l64/c19)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[1].value.ofType(Coding) (l64/c19)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[1].resource.ofType(Patient).identifier[3].type (l114/c12)</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[2].resource.ofType(List).code.coding[0] (l155/c12)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0] (l195/c13)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 matching against Profilehttp://hl7.org/fhir/StructureDefinition/MedicationRequest</b> <span id="sl29" class="flip" onclick="flip('l29')">Show Reasoning</span><div id="l29" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest): Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[5].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0] (l195/c13)</b></td><td><b>error</b></td><td><b>Unable to find matching profile for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 among choices: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0] (l195/c13)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 matching against Profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl31" class="flip" onclick="flip('l31')">Show Reasoning</span><div id="l31" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest): Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[5].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).medication.ofType(CodeableConcept).coding[0] (l211/c13)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).reasonCode[0] (l239/c16)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).dosage[0].route (l257/c12)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[4].resource.ofType(Practitioner).identifier[2].type (l313/c12)</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[4].resource.ofType(Practitioner).qualification[0].code.coding[0] (l353/c14)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0].type.coding[0] (l393/c15)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0] (l391/c17)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl38" class="flip" onclick="flip('l38')">Show Reasoning</span><div id="l38" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest) (l370/c15)</b></td><td><b>error</b></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[5].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l410/c14)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest).reasonCode[0] (l430/c17)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[5].resource.ofType(MedicationRequest).dosageInstruction[0].route (l448/c13)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest).identifier[0].type.coding[0] (l508/c14)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest).basedOn[0] (l554/c13)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 matching against Profilehttp://hl7.org/fhir/StructureDefinition/MedicationRequest</b> <span id="sl44" class="flip" onclick="flip('l44')">Show Reasoning</span><div id="l44" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></li>, <li>Bundle.entry[5].resource.ofType(MedicationRequest): Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[5].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest).identifier[0] (l506/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl45" class="flip" onclick="flip('l45')">Show Reasoning</span><div id="l45" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>Bundle.entry[6].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>Bundle.entry[6].resource.ofType(MedicationRequest).identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest) (l491/c15)</b></td><td><b>error</b></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[6].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l526/c13)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[6].resource.ofType(MedicationRequest).reasonCode[0] (l546/c16)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patientprofile1-medlist: Bundle.entry[7].resource.ofType(MedicationAdministration).medication.ofType(CodeableConcept).coding[0] (l585/c15)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
    </tr>
 </table>
 <hr/>
@@ -320,7 +421,7 @@
      <td><b>MedicationRequest/example0: MedicationRequest.identifier[0].type.coding[0] (l24/c21)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationRequest/example0: MedicationRequest.identifier[0] (l22/c17)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl26" class="flip" onclick="flip('l26')">Show Reasoning</span><div id="l26" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>MedicationRequest.identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>MedicationRequest.identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
+     <td><b><a href="">MedicationRequest/example0: MedicationRequest.identifier[0] (l22/c17)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl56" class="flip" onclick="flip('l56')">Show Reasoning</span><div id="l56" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>MedicationRequest.identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>MedicationRequest.identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationRequest/example0: MedicationRequest (l2/c48)</b></td><td><b>error</b></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'MedicationRequest.identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
@@ -346,16 +447,16 @@
      <td><b>MedicationRequest/example1: MedicationRequest.identifier[0].type.coding[0] (l18/c21)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationRequest/example1: MedicationRequest.identifier[0] (l16/c17)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl32" class="flip" onclick="flip('l32')">Show Reasoning</span><div id="l32" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>MedicationRequest.identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>MedicationRequest.identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
+     <td><b><a href="">MedicationRequest/example1: MedicationRequest.identifier[0] (l16/c17)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b> <span id="sl62" class="flip" onclick="flip('l62')">Show Reasoning</span><div id="l62" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder<ul><li>MedicationRequest.identifier[0]: discriminator = true and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li>, <li>MedicationRequest.identifier[0]: discriminator = true and ('http://ns.health.nsw.gov.au/fhir/ehealth/itoc/id/scriptid' in system) and (type memberOf 'http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationRequest/example1: MedicationRequest (l2/c48)</b></td><td><b>error</b></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'MedicationRequest.identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest/example1: MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l35/c17)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+     <td><b>MedicationRequest/example1: MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l36/c17)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest/example1: MedicationRequest.reasonCode[0] (l55/c14)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
+     <td><b>MedicationRequest/example1: MedicationRequest.reasonCode[0] (l56/c14)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
    </tr>
 </table>
 <hr/>
@@ -735,6 +836,14 @@
    </tr>
 </table>
 <hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Unable to find matching profile for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 among choices: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Terminology_TX_Code_ValueSet_Ext"> </a>
 <h2>Terminology_TX_Code_ValueSet_Ext</h2>
  <table class="grid">
@@ -743,6 +852,12 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-patientprofile1-medhistory.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Patient-example0.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\patient-example0.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
@@ -775,6 +890,30 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Bundle-patientprofile1-medhistory.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory.xml</a></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;http://meteor.aihw.gov.au/content/index.phtml/itemId/635126&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Code System URI &quot;http://hl7.org.au/fhir/v2/0203&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="List-medhistory-list-example0.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\list-medhistory-list-example0.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
@@ -848,6 +987,45 @@
      <td><a href="Bundle-patientprofile1-medhistory.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
      <td><a href="MedicationAdministration-patientprofile1-mar-example0.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationadministration-patientprofile1-mar-example0.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
@@ -897,6 +1075,12 @@
 <a name="Validation_VAL_Profile_Minimum"> </a>
 <h2>Validation_VAL_Profile_Minimum</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[5].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-patientprofile1-medlist.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist.xml</a></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'Bundle.entry[6].resource.ofType(MedicationRequest).identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="MedicationRequest-example0.html">C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example0.xml</a></td><td><b>Profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder, Element 'MedicationRequest.identifier[localScriptNumber]': minimum required = 1, but only found 0</b></td>
    </tr>

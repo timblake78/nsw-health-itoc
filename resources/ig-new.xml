@@ -283,6 +283,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/patientprofile1-medlist"/>
+      </reference>
+      <name value="Basic Bundle example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="MessageHeader/example0"/>
       </reference>
       <name value="Basic Message Header example"/>
