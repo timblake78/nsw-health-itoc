@@ -24,6 +24,25 @@
 		<short value="The cerner (MULTUM) code for the medication" />
 		<min value="0"/>
 	</element>
+    <element id="Medication.code.coding:cerner.extension">
+      <path value="Medication.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.code.coding:cerner.extension:medicationClass">
+      <path value="Medication.code.coding.extension" />
+      <sliceName value="medicationClass" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-type" />
+      </type>
+    </element>	
 	<element id="Medication.code.coding:cerner.system">
 		<path value="Medication.code.coding.system"/>
 		<min value="1"/>
@@ -40,6 +59,25 @@
 		<short value="The MetaVision / IMDsoft code for the medication" />		
 		<min value="0"/>
 	</element>
+    <element id="Medication.code.coding:imdsoft.extension">
+      <path value="Medication.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.code.coding:imdsoft.extension:medicationClass">
+      <path value="Medication.code.coding.extension" />
+      <sliceName value="medicationClass" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-type" />
+      </type>
+    </element>	
 	<element id="Medication.code.coding:imdsoft.system">
 		<path value="Medication.code.coding.system"/>
 		<min value="1"/>
