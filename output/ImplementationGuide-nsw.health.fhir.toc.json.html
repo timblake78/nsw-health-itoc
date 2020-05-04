@@ -98,24 +98,24 @@
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h2>ImplementationGuide-nswhealth-itoc</h2>
+<h2>ImplementationGuide-nsw.health.fhir.toc</h2>
 
 <p>
-Formats: <a href="ImplementationGuide-nswhealth-itoc.xml.html">XML</a>, <a href="ImplementationGuide-nswhealth-itoc.json.html">JSON</a>, <a href="ImplementationGuide-nswhealth-itoc.ttl.html">Turtle</a>
+Formats: <a href="ImplementationGuide-nsw.health.fhir.toc.xml.html">XML</a>, <a href="ImplementationGuide-nsw.health.fhir.toc.json.html">JSON</a>, <a href="ImplementationGuide-nsw.health.fhir.toc.ttl.html">Turtle</a>
 </p>
 <p>
-Raw <a href="ImplementationGuide-nswhealth-itoc.json" download>json</a>
+Raw <a href="ImplementationGuide-nsw.health.fhir.toc.json" download>json</a>
 </p>
 
 <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide">resourceType</a>" : "ImplementationGuide",
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.id">id</a>" : "nswhealth-itoc",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.id">id</a>" : "nsw.health.fhir.toc",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;NSWHealthTOCImplementationGuide&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;NSWHealthTOCImplementationGuide&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.url">url</a>" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.url">url</a>" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.name">name</a>" : "NSWHealthTOCImplementationGuide",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.title">title</a>" : "NSW Health Integrated Transitions of Care (iTOC) Implementation Guide",
@@ -678,6 +678,24 @@ Raw <a href="ImplementationGuide-nswhealth-itoc.json" download>json</a>
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "MedicationStatement"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "MedicationStatement-patientprofile1-medhistory-example3.html"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "MedicationStatement/patientprofile1-medhistory-example3"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Basic MedicationStatement example",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "p1"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "List"
           },
           {
@@ -952,7 +970,7 @@ Raw <a href="ImplementationGuide-nswhealth-itoc.json" download>json</a>
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, May 4, 2020 10:13+1000. |
+        &copy; NSW Health iTOC on FHIR R4 (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, May 4, 2020 13:41+1000. |
              <!--  <a style="color: #81BEF7" rel="license" <!-- <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

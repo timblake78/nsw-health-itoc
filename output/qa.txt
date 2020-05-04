@@ -1,13 +1,13 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 14, warn = 52, info = 33
+err = 14, warn = 52, info = 34
 IG Publisher Version: v1.0.88-SNAPSHOT
-Generated Mon May 04 10:14:28 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+Generated Mon May 04 13:43:39 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
- Build Errors : 0 / 1
+ Build Errors : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist : 3 / 28
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist : 3 / 27
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\encounter-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\list-medhistory-list-example0 : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example0 : 0 / 0
@@ -20,6 +20,7 @@ Generated Mon May 04 10:14:28 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example0 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example1 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example2 : 0 / 1
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example3 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\messageheader-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\organization-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\patient-example0 : 0 / 9
@@ -52,7 +53,6 @@ Generated Mon May 04 10:14:28 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\valueset-messagetype : 0 / 0
 </table>
 == n/a ==
-WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be nsw.health.fhir.toc
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory.xml ==
 INFORMATION: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding): Code System URI "http://meteor.aihw.gov.au/content/index.phtml/itemId/635126" is unknown so the code cannot be validated
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding): ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator
@@ -86,7 +86,6 @@ INFORMATION: Bundle/patientprofile1-medlist: Bundle.entry[2].resource.ofType(Lis
 INFORMATION: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0]: Details for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 matching against Profilehttp://hl7.org/fhir/StructureDefinition/MedicationRequest
 ERROR: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0]: Unable to find matching profile for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 among choices: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder
 INFORMATION: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).basedOn[0]: Details for urn:uuid:2c861b14-f189-4c53-bd5c-dc2bdf46c065 matching against Profilehttp://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocorder
-WARNING: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).medication.ofType(CodeableConcept).coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
 WARNING: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
 WARNING: Bundle/patientprofile1-medlist: Bundle.entry[3].resource.ofType(MedicationStatement).dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 WARNING: Bundle/patientprofile1-medlist: Bundle.entry[4].resource.ofType(Practitioner).identifier[2].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
@@ -137,6 +136,9 @@ WARNING: MedicationStatement/patientprofile1-medhistory-example1: MedicationStat
 WARNING: MedicationStatement/patientprofile1-medhistory-example1: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example2.xml ==
 WARNING: MedicationStatement/patientprofile1-medhistory-example2: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
+== C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example3.xml ==
+WARNING: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
+WARNING: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\messageheader-example0.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\organization-example0.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\patient-example0.xml ==
@@ -174,7 +176,7 @@ WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinitio
 WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocdosage: The Implementation Guide contains no examples for this profile
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\nswhealthitocencounter.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\nswhealthitocmedication.xml ==
-WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication: The Implementation Guide contains no examples for this profile
+INFORMATION: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication: The Implementation Guide contains no explicitly linked examples for this profile
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\nswhealthitocmedicationadministration.xml ==
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: Differential contains path MedicationAdministration.medication[x].coding which is actually Element.coding, which is not found in the base
 ERROR: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: StructureDefinition profile http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationadministration: Differential contains path MedicationAdministration.medication[x].coding.code which is actually Element.coding.code, which is not found in the base

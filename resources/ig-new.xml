@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="nswhealth-itoc"/>
+  <id value="nsw.health.fhir.toc"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources"/>
   </extension>
@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\pages"/>
   </extension>
-  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc"/>
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc"/>
   <version value="1.0.0"/>
   <name value="NSWHealthTOCImplementationGuide"/>
   <title value="NSW Health Integrated Transitions of Care (iTOC) Implementation Guide"/>
@@ -252,6 +252,14 @@
     <resource>
       <reference>
         <reference value="MedicationStatement/patientprofile1-medhistory-example2"/>
+      </reference>
+      <name value="Basic MedicationStatement example"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/patientprofile1-medhistory-example3"/>
       </reference>
       <name value="Basic MedicationStatement example"/>
       <exampleBoolean value="true"/>

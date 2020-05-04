@@ -215,7 +215,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medlist-example0</p><p><b>meta</b>: </p><p><b>basedOn</b>: <a href=\"#backboneelement_example0\">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"#backboneelement_example0\">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosage</b>: </p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medlist-example0</p><p><b>meta</b>: </p><p><b>basedOn</b>: <a href=\"#backboneelement_example0\">Supporting Medication Order. Generated Summary: unknown resource entry</a></p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: <a href=\"#backboneelement_example0\">Generated Summary: unknown resource entry</a></p><p><b>subject</b>: <a href=\"#backboneelement_example0\">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href=\"#backboneelement_example0\">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>dosage</b>: </p></div>"
         },
         "extension": [
           {
@@ -243,25 +243,8 @@
             }
           ]
         },
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
-                  "valueCoding": {
-                    "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
-                    "code": "UPDSF",
-                    "display": "Unbranded product with strengths and form"
-                  }
-                }
-              ],
-              "system": "http://snomed.info/sct",
-              "code": "23519011000036101",
-              "display": "amlodipine 10 mg tablet"
-            }
-          ],
-          "text": "Amlodipine 10 mg Tablet"
+        "medicationReference": {
+          "reference": "urn:uuid:c0626753-5e6a-402e-8a84-34b695233835"
         },
         "subject": {
           "reference": "urn:uuid:c1643934-e8e0-4ca9-a30a-df11d4918308",
@@ -744,6 +727,50 @@
             "system": "http://unitsofmeasure.org",
             "code": "mg"
           }
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c0626753-5e6a-402e-8a84-34b695233835",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "example0",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>code</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+            "valueString": "Norvasc"
+          },
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+            "valueString": "Amlodipine"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                    "code": "UPDSF",
+                    "display": "Unbranded product with strengths and form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "23519011000036101",
+              "display": "amlodipine 10 mg tablet"
+            }
+          ],
+          "text": "Amlodipine 10 mg Tablet"
+        },
+        "form": {
+          "text": "Tablet"
         }
       }
     }

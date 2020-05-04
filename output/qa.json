@@ -1,12 +1,12 @@
 {
-  "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc",
+  "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc",
   "name": "NSWHealthTOCImplementationGuide",
   "package-id": "nsw.health.fhir.toc",
   "ig-ver": "1.0.0",
-  "date": "Mon, 04 May, 2020 10:13:05 +1000",
+  "date": "Mon, 04 May, 2020 13:41:22 +1000",
   "errs": 14,
   "warnings": 52,
-  "hints": 33,
+  "hints": 34,
   "version": "4.0.1",
   "tool": "4.4.0 (3)"
 }

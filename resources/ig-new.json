@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "nswhealth-itoc",
+  "id" : "nsw.health.fhir.toc",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-itoc\\resources"
@@ -13,7 +13,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\Users\\timbl\\OneDrive\\Documents\\nsw-health-itoc\\pages"
   }],
-  "url" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nswhealth-itoc",
+  "url" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc",
   "version" : "1.0.0",
   "name" : "NSWHealthTOCImplementationGuide",
   "title" : "NSW Health Integrated Transitions of Care (iTOC) Implementation Guide",
@@ -256,6 +256,14 @@
     {
       "reference" : {
         "reference" : "MedicationStatement/patientprofile1-medhistory-example2"
+      },
+      "name" : "Basic MedicationStatement example",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "MedicationStatement/patientprofile1-medhistory-example3"
       },
       "name" : "Basic MedicationStatement example",
       "exampleBoolean" : true,
