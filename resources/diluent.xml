@@ -35,7 +35,7 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedication" />
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement" />
       </type>
     </element>
 	
