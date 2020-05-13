@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9c2aebbd-ceab-4bae-bbff-35c5f8e809eb",
+  "id" : "e00bbae8-d1b9-4868-a389-aa8f5f992a54",
   "meta" : {
-    "lastUpdated" : "2020-05-07T06:36:31.495+10:00"
+    "lastUpdated" : "2020-05-13T11:34:39.940+10:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,7 +12,7 @@
       "id" : "messagetype",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-messagetype.html\">Message Header Type v1.0.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Logical Definition (CLD)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-list\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-list\">medication-list</a></td><td>This message is a medication list</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-history\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-history\">medication-history</a></td><td>This message is a medication history</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-administration-record\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-administration-record\">medication-administration-record</a></td><td>This message is a medication administration record</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-reconciled-medication-list\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-reconciled-medication-list\">reconciled-medication-list</a></td><td>This message is a reconciled medication list</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-messagetype.html\">Message Header Type v1.0.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-list\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-list\">medication-list</a></td><td>This message is a medication list</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-history\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-history\">medication-history</a></td><td>This message is a medication history</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-administration-record\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-medication-administration-record\">medication-administration-record</a></td><td>This message is a medication administration record</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-reconciled-medication-list\"> </a><a href=\"CodeSystem-messagetype.html#messagetype-reconciled-medication-list\">reconciled-medication-list</a></td><td>This message is a reconciled medication list</td><td/></tr></table></div>"
       },
       "url" : "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype",
       "identifier" : [{
@@ -28,8 +28,8 @@
       "publisher" : "NSW eHealth",
       "description" : "Message Header Types for Integrated Transitions of Care (iTOC) Messages",
       "expansion" : {
-        "identifier" : "urn:uuid:dc893824-cd4e-47b6-92a8-10a1c213c9d5",
-        "timestamp" : "2020-05-07T06:36:57+10:00",
+        "identifier" : "urn:uuid:43df487d-7672-4da7-8c27-34fb9dcfd253",
+        "timestamp" : "2020-05-13T11:35:12+10:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
