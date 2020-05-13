@@ -28,6 +28,9 @@
 			  <display value="Unbranded product with no strengths or form"/>
 			</valueCoding>
 		  </extension>
+		  <extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype">
+			<valueCode value="generic"/>
+		  </extension>		  
 		  <system value="http://www.imd-soft.com/itoc/codes"/>
 		  <code value="13614"/>
 		  <display value="pantoprazole"/>
@@ -40,6 +43,9 @@
 			  <code value="UPD"/>
 			  <display value="Unbranded product with no strengths or form"/>
 			</valueCoding>
+		  </extension>
+		  <extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype">
+			<valueCode value="generic"/>
 		  </extension>
 		  <system value="http://cerner.com/itoc/codes"/>
 		  <code value="MUL.ORD-SYN!12418"/>

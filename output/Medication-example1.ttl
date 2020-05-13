@@ -44,6 +44,10 @@
            fhir:Coding.code [ fhir:value "UPD" ];
            fhir:Coding.display [ fhir:value "Unbranded product with no strengths or form" ]
          ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype" ];
+         fhir:Extension.valueCode [ fhir:value "generic" ]
        ];
        fhir:Coding.system [ fhir:value "http://www.imd-soft.com/itoc/codes" ];
        fhir:Coding.code [ fhir:value "13614" ];
@@ -58,6 +62,10 @@
            fhir:Coding.code [ fhir:value "UPD" ];
            fhir:Coding.display [ fhir:value "Unbranded product with no strengths or form" ]
          ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype" ];
+         fhir:Extension.valueCode [ fhir:value "generic" ]
        ];
        fhir:Coding.system [ fhir:value "http://cerner.com/itoc/codes" ];
        fhir:Coding.code [ fhir:value "MUL.ORD-SYN!12418" ];

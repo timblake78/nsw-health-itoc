@@ -43,6 +43,15 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-type" />
       </type>
     </element>	
+    <element id="Medication.code.coding:cerner.extension:itoc-medication-type">
+      <path value="Medication.code.coding.extension" />
+      <sliceName value="itoc-medication-type" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype" />
+      </type>
+    </element>		
 	<element id="Medication.code.coding:cerner.system">
 		<path value="Medication.code.coding.system"/>
 		<min value="1"/>
@@ -76,6 +85,15 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-type" />
+      </type>
+    </element>
+    <element id="Medication.code.coding:imdsoft.extension:itoc-medication-type">
+      <path value="Medication.code.coding.extension" />
+      <sliceName value="itoc-medication-type" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype" />
       </type>
     </element>	
 	<element id="Medication.code.coding:imdsoft.system">

@@ -311,6 +311,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-itocmedicationtype.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/itocmedicationtype"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-medicationcheckundertaken.html"
           }
         ],

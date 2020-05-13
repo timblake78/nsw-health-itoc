@@ -37,6 +37,10 @@
               "code": "UPD",
               "display": "Unbranded product with no strengths or form"
             }
+          },
+          {
+            "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype",
+            "valueCode": "generic"
           }
         ],
         "system": "http://www.imd-soft.com/itoc/codes",
@@ -52,6 +56,10 @@
               "code": "UPD",
               "display": "Unbranded product with no strengths or form"
             }
+          },
+          {
+            "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype",
+            "valueCode": "generic"
           }
         ],
         "system": "http://cerner.com/itoc/codes",

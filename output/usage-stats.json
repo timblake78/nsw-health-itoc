@@ -20,6 +20,14 @@
       ]
     },
     {
+      "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype",
+      "title": "iTOCMedicationType",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
       "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken",
       "title": "MedicationCheckUndertaken",
       "types": [
@@ -119,6 +127,9 @@
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent": [
       "MedicationAdministration",
       "MedicationStatement"
+    ],
+    "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype": [
+      "Medication.code.coding"
     ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/medicationcheckundertaken": [
       "Encounter"

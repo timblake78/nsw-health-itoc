@@ -179,6 +179,9 @@
 		"StructureDefinition/diluent": {
 		  "base": "StructureDefinition-diluent.html"
 		},
+		"StructureDefinition/itocmedicationtype": {
+		  "base": "StructureDefinition-itocmedicationtype.html"
+		},
 		"StructureDefinition/medicationcheckundertaken": {
 		  "base": "StructureDefinition-medicationcheckundertaken.html"
 		},

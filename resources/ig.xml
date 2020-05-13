@@ -134,6 +134,13 @@
 	</resource>
 	<resource>
 		<reference>
+			<reference value="StructureDefinition/itocmedicationtype"/>
+		</reference>
+   	    <exampleBoolean value="false"/>
+	    <groupingId value="p1"/>
+	</resource>	
+	<resource>
+		<reference>
 			<reference value="StructureDefinition/medicationcheckundertaken"/>
 		</reference>
    	    <exampleBoolean value="false"/>

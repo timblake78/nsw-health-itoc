@@ -152,6 +152,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/itocmedicationtype"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/medicationcheckundertaken"
       },
       "exampleBoolean" : false,

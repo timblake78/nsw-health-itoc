@@ -1,9 +1,9 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 52, info = 34
+err = 0, warn = 53, info = 34
 IG Publisher Version: v1.0.94-SNAPSHOT
-Generated Wed May 13 11:36:04 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+Generated Thu May 14 09:25:50 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
  Build Errors : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
@@ -11,7 +11,7 @@ Generated Wed May 13 11:36:04 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\encounter-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\list-medhistory-list-example0 : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example0 : 0 / 0
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example1 : 0 / 2
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example1 : 2 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example2 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example3 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationadministration-patientprofile1-mar-example0 : 1 / 1
@@ -31,6 +31,7 @@ Generated Wed May 13 11:36:04 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\codesystem-messagetype : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\diluent : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\ig : 0 / 0
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\itocmedicationtype : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\medicationcheckundertaken : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\mostrecentadmin : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\nswhealthitocallergyintolerance : 0 / 1
@@ -158,6 +159,8 @@ INFORMATION: Practitioner/example2: Practitioner.qualification[0].code.coding[0]
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\diluent.xml ==
 WARNING: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent: The Implementation Guide contains no examples for this extension
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\ig.xml ==
+== C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\itocmedicationtype.xml ==
+WARNING: StructureDefinition/itocmedicationtype: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\medicationcheckundertaken.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\mostrecentadmin.xml ==
 WARNING: StructureDefinition/mostrecentadmin: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="itocmedicationtype" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype" />
+  <version value="1.0.0" />
+  <name value="iTOCMedicationType" />
+  <status value="draft" />
+  <date value="2020-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="Medication"/>
+  </context>   
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+ <differential>
+	<element id="Extension">
+		<path value="Extension"/>
+		<short value="generic | product | brand"/>
+	</element>  
+	 <element id="Extension.url">
+		<path value="Extension.url"/>
+		<fixedUri value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocmedicationtype"/>
+	 </element>
+	 <element id="Extension.value[x]:valueCode">
+		<path value="Extension.valueCode"/>
+		<short value="generic | product | brand"/>
+		<sliceName value="valueCode"/>
+		 <type>
+		<code value="code"/>
+		</type>
+	</element>
+</differential>
+</StructureDefinition>
