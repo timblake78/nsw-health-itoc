@@ -12,7 +12,7 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmessageheader"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>event</b>: This message is a medication history (Details: http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype code medication-history = 'This message is a medication history', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>GH</td><td><a href="http://cerner.com">http://cerner.com</a></td></tr></table><p><b>focus</b>: <a href="#backboneelement_example0">Generated Summary: unknown resource entry</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <eventCoding>
           <system value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype"/>
@@ -37,7 +37,7 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpatient"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608166690503, Medicare Number = 32788511952, Medical Record Number = 123456789, auID = 123456789</p><p><b>name</b>: Stella Franklin </p><p><b>telecom</b>: sfranklin@amail.com.au(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-10-14</p><p><b>address</b>: 31 Pacquola Street Blacktown NSW 2148 Australia (HOME)</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <extension url="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex">
           <valueCoding>
@@ -144,7 +144,7 @@
       <List>
         <id value="medhistory-list-example0"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medhistory-list-example0</p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Current Medicine <span style="background: LightGoldenRodYellow">(Details : {https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1 code '101.32009' = '101.32009', given as 'Current Medicine'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 29/10/2019 12:00:00 AM</p><blockquote><p><b>entry</b></p><p><b>item</b>: <a href="#backboneelement_patientprofile1-medhistory-example0">Generated Summary: unknown resource entry</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: <a href="#backboneelement_patientprofile1-medhistory-example1">Generated Summary: unknown resource entry</a></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <status value="current"/>
         <mode value="snapshot"/>
@@ -181,7 +181,7 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example0</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: Inpatient <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/medication-statement-category code 'inpatient' = 'Inpatient', given as 'Inpatient'})</span></p><p><b>medication</b>: Amlodipine 10 mg Tablet <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href="#backboneelement_example0">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Hypertensive disorder, systemic arterial <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '38341003' = 'Hypertensive disorder', given as 'Hypertensive disorder, systemic arterial'})</span></p><p><b>note</b>: The patient is not sure when exactly started taking the medication but is certain it's been over a year</p><p><b>dosage</b>: </p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
           <valueString value="Norvasc"/>
@@ -267,7 +267,7 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patientprofile1-medhistory-example1</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>category</b>: inpatient <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>medication</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>subject</b>: <a href="#backboneelement_example0">Stella Franklin. Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 01/01/2018 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: 29/10/2019 12:00:00 AM</p><p><b>informationSource</b>: <a href="#backboneelement_example0">Doctor Mayo. Generated Summary: unknown resource entry</a></p><p><b>dosage</b>: </p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
           <valueString value="Ventolin"/>
@@ -348,7 +348,7 @@
           <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocpractitioner"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-I = 8003619900015717, Prescriber Number = 453221, StaffLink Number = 8234234234</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED0000932945</td><td>General Practitioner <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Practitioner'})</span></td><td>AHPRA</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
         </text>
         <identifier>
           <type>

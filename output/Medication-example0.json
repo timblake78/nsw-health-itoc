@@ -3,7 +3,7 @@
   "id": "example0",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>code</b>: Amlodipine 10 mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '23519011000036101' = 'amlodipine 10 mg tablet', given as 'amlodipine 10 mg tablet'})</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: example0</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 23519011000036101}\">Amlodipine 10 mg Tablet</span></p><p><b>form</b>: <span title=\"Codes: \">Tablet</span></p></div>"
   },
   "extension": [
     {

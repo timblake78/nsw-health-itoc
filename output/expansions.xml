@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bd0acab6-70c4-4809-a52d-e091bfa56bf2"/>
+  <id value="96679f9d-e0c8-4bf9-bd07-e62b9042dc3e"/>
   <meta>
-    <lastUpdated value="2020-05-14T09:24:27.444+10:00"/>
+    <lastUpdated value="2020-05-25T11:25:20.778+10:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,7 +19,7 @@
               <a href="CodeSystem-messagetype.html">Message Header Type v1.0.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
-              <a href="CodeSystem-messagetype.html">
+              <a href="http://hl7.org/fhir/R4/CodeSystem-messagetype.html">
                 <code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code>
               </a>
             </p>
@@ -38,7 +38,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-list"> </a>
-                  <a href="CodeSystem-messagetype.html#messagetype-medication-list">medication-list</a>
+                  <a href="http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-list">medication-list</a>
                 </td>
                 <td>This message is a medication list</td>
                 <td/>
@@ -46,7 +46,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-history"> </a>
-                  <a href="CodeSystem-messagetype.html#messagetype-medication-history">medication-history</a>
+                  <a href="http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-history">medication-history</a>
                 </td>
                 <td>This message is a medication history</td>
                 <td/>
@@ -54,7 +54,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-medication-administration-record"> </a>
-                  <a href="CodeSystem-messagetype.html#messagetype-medication-administration-record">medication-administration-record</a>
+                  <a href="http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-administration-record">medication-administration-record</a>
                 </td>
                 <td>This message is a medication administration record</td>
                 <td/>
@@ -62,7 +62,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---fhir.health.nsw.gov.au-fhir-ehealth-itoc-v1.0-CodeSystem-messagetype-reconciled-medication-list"> </a>
-                  <a href="CodeSystem-messagetype.html#messagetype-reconciled-medication-list">reconciled-medication-list</a>
+                  <a href="http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-reconciled-medication-list">reconciled-medication-list</a>
                 </td>
                 <td>This message is a reconciled medication list</td>
                 <td/>
@@ -84,8 +84,8 @@
         <publisher value="NSW eHealth"/>
         <description value="Message Header Types for Integrated Transitions of Care (iTOC) Messages"/>
         <expansion>
-          <identifier value="urn:uuid:be5fabd2-fe60-4ba0-8e7b-d4ece502fb82"/>
-          <timestamp value="2020-05-14T09:25:08+10:00"/>
+          <identifier value="urn:uuid:ccd033ed-18fc-47c0-b944-6a7407d313a8"/>
+          <timestamp value="2020-05-25T11:25:49+10:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

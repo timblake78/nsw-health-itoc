@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "example1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>code</b>: pantoprazole <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '21563011000036107' = 'pantoprazole', given as 'pantoprazole'}; {http://www.imd-soft.com/itoc/codes code '13614' = '13614', given as 'pantoprazole'}; {http://cerner.com/itoc/codes code 'MUL.ORD-SYN!12418' = 'MUL.ORD-SYN!12418', given as 'pantoprazole'})</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: example1</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 21563011000036107}, {http://www.imd-soft.com/itoc/codes 13614}, {http://cerner.com/itoc/codes MUL.ORD-SYN!12418}\">pantoprazole</span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

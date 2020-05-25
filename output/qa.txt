@@ -1,26 +1,26 @@
 ﻿NSWHealthTOCImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 53, info = 34
-IG Publisher Version: v1.0.94-SNAPSHOT
-Generated Thu May 14 09:25:50 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
+err = 0, warn = 53, info = 37
+IG Publisher Version: v1.0.95-SNAPSHOT
+Generated Mon May 25 11:27:12 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.toc#1.0.0 (canonical = http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0)
 
- Build Errors : 0 / 0
+ Build Errors : 6 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory : 0 / 18
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist : 3 / 27
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medlist : 4 / 27
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\encounter-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\list-medhistory-list-example0 : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example1 : 2 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example2 : 0 / 0
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example3 : 0 / 0
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example3 : 0 / 1
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationadministration-patientprofile1-mar-example0 : 1 / 1
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example0 : 1 / 5
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example0 : 2 / 5
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example1 : 1 / 4
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example0 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example1 : 0 / 2
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example2 : 0 / 1
- C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example3 : 0 / 2
+ C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example3 : 0 / 4
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\messageheader-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\organization-example0 : 0 / 0
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\patient-example0 : 0 / 9
@@ -54,6 +54,12 @@ Generated Thu May 14 09:25:50 AEST 2020. FHIR version 4.0.1 for nsw.health.fhir.
  C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\resources\valueset-messagetype : 0 / 0
 </table>
 == n/a ==
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 121, column 81: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html' for "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype" cannot be resolved
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/p/a at Line 125, column 311: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html' for "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype" cannot be resolved
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 125, column 736: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-list' for "medication-list" cannot be resolved
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 125, column 1046: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-history' for "medication-history" cannot be resolved
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 125, column 1379: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-medication-administration-record' for "medication-administration-record" cannot be resolved
+ERROR: C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\output\ValueSet-messagetype.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 125, column 1748: The link 'http://hl7.org/fhir/R4/CodeSystem-messagetype.html#messagetype-reconciled-medication-list' for "reconciled-medication-list" cannot be resolved
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\bundle-patientprofile1-medhistory.xml ==
 INFORMATION: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding): Code System URI "http://meteor.aihw.gov.au/content/index.phtml/itemId/635126" is unknown so the code cannot be validated
 WARNING: Bundle/patientprofile1-medhistory: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Coding): ValueSet http://meteor.aihw.gov.au/content/index.phtml/itemId/635126 not found by validator
@@ -110,6 +116,7 @@ INFORMATION: Medication/example1: Medication.code.coding[1]: Code System URI "ht
 INFORMATION: Medication/example1: Medication.code.coding[2]: Code System URI "http://cerner.com/itoc/codes" is unknown so the code cannot be validated
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example2.xml ==
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medication-example3.xml ==
+INFORMATION: Medication/example3: Medication.code.coding[0]: Code System URI "http://www.imd-soft.com/itoc/codes" is unknown so the code cannot be validated
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationadministration-patientprofile1-mar-example0.xml ==
 WARNING: MedicationAdministration/patientprofile1-mar-example0: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationrequest-example0.xml ==
@@ -132,6 +139,8 @@ WARNING: MedicationStatement/patientprofile1-medhistory-example1: MedicationStat
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example2.xml ==
 WARNING: MedicationStatement/patientprofile1-medhistory-example2: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\medicationstatement-patientprofile1-medhistory-example3.xml ==
+INFORMATION: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.dosage[0].doseAndRate[1].dose.ofType(Quantity): Code System URI "http://cerner.com/itoc/codes/dose" is unknown so the code cannot be validated
+INFORMATION: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.dosage[0].doseAndRate[2].dose.ofType(Quantity): Code System URI "http://imd-soft.com/itoc/codes/dose" is unknown so the code cannot be validated
 WARNING: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.reasonCode[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
 WARNING: MedicationStatement/patientprofile1-medhistory-example3: MedicationStatement.dosage[0].route: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1 not found by validator
 == C:\Users\timbl\OneDrive\Documents\nsw-health-itoc\examples\messageheader-example0.xml ==

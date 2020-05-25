@@ -3,7 +3,7 @@
   "id": "example2",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example2</p><p><b>code</b>: Salbutamol 200 microgram powder for inhalation, unit dose <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '45078011000036105' = 'salbutamol 200 microgram powder for inhalation, unit dose', given as 'salbutamol 200 microgram powder for inhalation, unit dose'})</span></p><p><b>form</b>: Inhalation <span style=\"background: LightGoldenRodYellow\">(Details )</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: example2</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 45078011000036105}\">Salbutamol 200 microgram powder for inhalation, unit dose</span></p><p><b>form</b>: <span title=\"Codes: \">Inhalation</span></p></div>"
   },
   "extension": [
     {

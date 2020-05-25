@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nsw.health.fhir.toc",
   "text": {
-    "status": "generated",
+    "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NSWHealthTOCImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc</pre></div>"
   },
   "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ImplementationGuide/nsw.health.fhir.toc",

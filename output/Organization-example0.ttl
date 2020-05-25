@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-O = 8003621566684455</p><p><b>active</b>: true</p><p><b>name</b>: NSW Health</p><p><b>telecom</b>: support@health.nsw.gov.au(WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: example0</p><p><b>meta</b>: </p><p><b>identifier</b>: HPI-O = 8003621566684455</p><p><b>active</b>: true</p><p><b>name</b>: NSW Health</p><p><b>telecom</b>: support@health.nsw.gov.au(WORK)</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
