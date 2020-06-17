@@ -1,4 +1,4 @@
 
-An extension on MedicationStatement / MedicationAdministration to optionally reference a diluent Medication.
+An extension on MedicationStatement / MedicationAdministration to optionally reference a diluent MedicationStatement.
 
-The diluent extension provides a reference to a diluent Medication.
+The diluent extension provides a reference to a diluent MedicationStatement.

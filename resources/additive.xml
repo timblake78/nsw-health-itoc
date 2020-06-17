@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="additive" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/additive" />
+  <version value="1.0.0" />
+  <name value="Additive" />
+  <status value="draft" />
+  <date value="2020-06-15"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="MedicationStatement"/>
+  </context> 
+  <context>
+    <type value="element"/>
+    <expression value="MedicationAdministration"/>
+  </context> 
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+	<element id="Extension">
+		<path value="Extension"/>
+		<short value="Extension Element for Additive"/>
+	</element> 
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/additive" />
+    </element>
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/nswhealthitocmedicationstatement" />
+      </type>
+    </element>
+	
+  </differential>
+</StructureDefinition>

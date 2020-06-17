@@ -13,7 +13,15 @@
   <context>
     <type value="element"/>
     <expression value="Medication"/>
-  </context>   
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Medication.code.coding"/>
+  </context>  
+  <context>
+    <type value="element"/>
+    <expression value="MedicationAdministration"/>
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

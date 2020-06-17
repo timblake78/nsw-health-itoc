@@ -148,7 +148,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/additive"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/itocmedicationtype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/itocdosage"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>

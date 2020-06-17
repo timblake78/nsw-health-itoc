@@ -152,7 +152,21 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/additive"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/itocmedicationtype"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/itocdosage"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"

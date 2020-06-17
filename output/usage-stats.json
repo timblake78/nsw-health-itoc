@@ -5,6 +5,13 @@
   "jurisdiction": "AU",
   "extensions": [
     {
+      "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/additive",
+      "title": "Additive",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex",
       "title": "BiologicalSex",
       "types": [
@@ -120,6 +127,10 @@
     ]
   },
   "usage": {
+    "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/additive": [
+      "MedicationAdministration",
+      "MedicationStatement"
+    ],
     "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/biologicalsex": [
       "Bundle.entry.resource",
       "Patient"

@@ -39,6 +39,16 @@
         <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/diluent" />
       </type>
     </element>
+    <element id="MedicationAdministration.extension:additive">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="additive" />
+      <short value="An additive medication" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/additive" />
+      </type>
+    </element>	
     <element id="MedicationAdministration.category">
       <path value="MedicationAdministration.category" />
       <short value="The type of medication usage." />

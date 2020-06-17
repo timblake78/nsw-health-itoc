@@ -16,6 +16,7 @@ The following profiles have been defined for this implementation guide.
 * [NSW Health iTOC MedicationAdministration](StructureDefinition-nswhealthitocmedicationadministration.html) - A MedicationAdministration with a diluent extension and mandatory prescription and performer
 * [NSW Health iTOC Order](StructureDefinition-nswhealthitocorder.html) - A medication order (request) with mandatory status and requester
 * [NSW Health iTOC Medication List](StructureDefinition-nswhealthitocmedicationlist.html) - A list of medications in a NSW Health context
+* [NSW Health iTOC Dosage](StructureDefinition-itocdosage.html) - An iTOC medication dosage
 
 ## Clinical Profiles
 * [NSW Health iTOC Allergy Intolerance](StructureDefinition-nswhealthitocallergyintolerance.html) - An allergy or intolerance in a NSW Health context

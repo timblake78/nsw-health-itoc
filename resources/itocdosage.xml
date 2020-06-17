@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="itocdosage" />
+  <url value="http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/StructureDefinition/itocdosage" />
+  
+  <version value="1.0.0" />
+  <name value="NSWHealthiTOCDosage" />
+  <title value="iTOC Dosage" /> 
+  <status value="draft" />
+  <date value="2019-10-29"/>
+  <publisher value="NSW eHealth" />  
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Dosage" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage" />
+  <derivation value="constraint" />
+  
+  <differential>
+  
+    <element id="Dosage">
+      <path value="Dosage" />
+      <short value="Dosage information in a NSW Health iTOC context" />
+    </element>
+
+  </differential>
+</StructureDefinition>

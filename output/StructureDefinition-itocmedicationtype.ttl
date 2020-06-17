@@ -31,6 +31,14 @@
      fhir:index 0;
      fhir:StructureDefinition.context.type [ fhir:value "element" ];
      fhir:StructureDefinition.context.expression [ fhir:value "Medication" ]
+  ], [
+     fhir:index 1;
+     fhir:StructureDefinition.context.type [ fhir:value "element" ];
+     fhir:StructureDefinition.context.expression [ fhir:value "Medication.code.coding" ]
+  ], [
+     fhir:index 2;
+     fhir:StructureDefinition.context.type [ fhir:value "element" ];
+     fhir:StructureDefinition.context.expression [ fhir:value "MedicationAdministration" ]
   ];
   fhir:StructureDefinition.type [ fhir:value "Extension"];
   fhir:StructureDefinition.baseDefinition [

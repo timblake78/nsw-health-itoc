@@ -179,8 +179,14 @@
 		"StructureDefinition/diluent": {
 		  "base": "StructureDefinition-diluent.html"
 		},
+		"StructureDefinition/additive": {
+		  "base": "StructureDefinition-additive.html"
+		},		
 		"StructureDefinition/itocmedicationtype": {
 		  "base": "StructureDefinition-itocmedicationtype.html"
+		},
+		"StructureDefinition/itocdosage": {
+		  "base": "StructureDefinition-itocdosage.html"
 		},
 		"StructureDefinition/medicationcheckundertaken": {
 		  "base": "StructureDefinition-medicationcheckundertaken.html"

@@ -3,7 +3,7 @@
   "id": "messagetype",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-messagetype.html\"><code>http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/CodeSystem/messagetype</code></a></li></ul></div>"
   },
   "url": "http://fhir.health.nsw.gov.au/fhir/ehealth/itoc/v1.0/ValueSet/messagetype",
   "identifier": [

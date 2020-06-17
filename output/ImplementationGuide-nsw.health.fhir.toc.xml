@@ -234,10 +234,36 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-additive.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additive"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-itocmedicationtype.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/itocmedicationtype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-itocdosage.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/itocdosage"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>

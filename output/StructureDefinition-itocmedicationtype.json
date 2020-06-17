@@ -25,6 +25,14 @@
     {
       "type": "element",
       "expression": "Medication"
+    },
+    {
+      "type": "element",
+      "expression": "Medication.code.coding"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
     }
   ],
   "type": "Extension",
